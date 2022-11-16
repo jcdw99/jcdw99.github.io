@@ -56,9 +56,9 @@ export default function FullWidthTabs() {
         onChange={handleChange}
         indicatorColor="primary"
         variant="fullWidth"
-        textColor='inheret'
+        textColor='inherit'
         centered
-        style={{background: "linear-gradient(45deg, darkturquoise, dodgerblue)"}}
+        style={{background: "linear-gradient(45deg, grey, blueGrey)"}}
       >
         {info.pages.map((page, index) => (
                      <Tab key={index}  label={page.field} {...a11yProps(index)} wrapped={true}/>
@@ -78,7 +78,7 @@ export default function FullWidthTabs() {
                   {field.work.map((page, pageDex) => (
                       
                       <Grid item xs={12} md={6} key={uuid()}>
-                          <PagesBlock link={page.link} name={page.name} desc={page.desc} tags={page.tags} />
+                          <PagesBlock link={page.link} name={page.name} desc={page.desc} tags={page.tags} github={page.github} />
                       </Grid>
                                         
                   ))}
