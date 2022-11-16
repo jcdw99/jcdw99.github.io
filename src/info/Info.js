@@ -65,29 +65,29 @@ export const info = {
 // Just change the links so that they lead to your social profiles.
 
     ],
-    bio: "Hello! I'm John. I'm a systems engineer for Google. I studied CompSci at Harvard, I enjoy long walks on the beach, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
+    bio: "Hi",
     skills:
         {
-            proficientWith: ['javascript', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma'],
-            exposedTo: ['nodejs', 'python', 'adobe illustrator']
+            proficientWith: ['I', 'am', 'good'],
+            exposedTo: ['at', 'everything']
         }
     ,
     hobbies: [
         {
-            label: 'reading',
-            emoji: '📖'
+            label: 'one',
+            emoji: '✔'
         },
         {
-            label: 'theater',
-            emoji: '🎭'
+            label: 'two',
+            emoji: '✔'
         },
         {
-            label: 'movies',
-            emoji: '🎥'
+            label: 'three',
+            emoji: '✔'
         },
         {
-            label: 'cooking',
-            emoji: '🌶'
+            label: 'four',
+            emoji: '✔'
         }
 // Same as above, change the emojis to match / relate to your hobbies or interests.
 // You can also remove the emojis if you'd like, I just think they look cute :P
