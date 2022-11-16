@@ -73,16 +73,15 @@ export default function FullWidthTabs() {
       {info.pages.map((field, index) => (
             <TabPanel value={value} index={index} key={index}>
                 <Box>
-                <Grid container display={'flex'} justifyContent={'center'} padding={"5em"}>
-                {field.work.map((page, pageDex) => (
-                    
-                        
-                    <Grid item xs={12} md={6} key={uuid()}>
-                        <PagesBlock link={page.link} name={page.name} desc={page.desc} />
-                    </Grid>
-                                      
-                ))}
-                </Grid>
+                  <Grid container display={'flex'} justifyContent={'center'} padding={{xs:'1.5rem', md:'4rem'}}>
+                  {field.work.map((page, pageDex) => (
+                      
+                      <Grid item xs={12} md={6} key={uuid()}>
+                          <PagesBlock link={page.link} name={page.name} desc={page.desc} tags={page.tags} />
+                      </Grid>
+                                        
+                  ))}
+                  </Grid>
                 </Box>  
             </TabPanel>
         ))}
@@ -91,121 +90,3 @@ export default function FullWidthTabs() {
     </Box>
   );
 }
-
-
-
-
-
-
-
-
-// import * as React from 'react';
-// import PropTypes from 'prop-types';
-// import Tabs from '@mui/material/Tabs';
-// import Tab from '@mui/material/Tab';
-// import Typography from '@mui/material/Typography';
-// import {Box, Grid} from "@mui/material";
-// import Style from '../../variables.modules.scss'
-// import {info} from "../../info/Info";
-// import PagesBlock from "./PagesBlock";
-// import uuid from 'react-uuid';
-
-// function TabPanel(props) {
-//   const { children, value, index, ...other } = props;
-
-//   return (
-//     <div
-//         role="tabpanel"
-//         hidden={value !== index}
-//         id={`full-width-tabpanel-${index}`}
-//         aria-labelledby={`full-width-tab-${index}`}
-//         {...other}
-//     >
-//       {value === index && (
-//         <Box sx={{ p: 3 }}>
-//           {children}
-//         </Box>
-//       )}
-//     </div>
-//   );
-// }
-
-// TabPanel.propTypes = {
-//   children: PropTypes.node,
-//   index: PropTypes.number.isRequired,
-//   value: PropTypes.number.isRequired,
-// };
-
-// function a11yProps(index) {
-//     return {
-//       id: `full-width-tab-${index}`,
-//       'aria-controls': `full-width-tabpanel-${index}`,
-//     };
-//   }
-
-// export default function Pages() {
-//   const [value, setValue] = React.useState(0);
-
-//   const handleChange = (event, newValue) => {
-//     setValue(newValue);
-//   };
-
-//   return (
-//     <Box
-//       sx={{ flexGrow: 1, bgcolor:Style.dark, display: 'flex', width: "100%" }}
-//     >
-//       <Tabs
-//         value={value}
-//         onChange={handleChange}
-//         indicatorColor="secondary"
-//         textColor={Style.light}
-//         variant="fullWidth"
-//         aria-label="full width tabs example"
-//         centered
-//       >
-//         {info.pages.map((page, index) => (
-//                      <Tab key={index} label={page.field} {...a11yProps(index)} />
-//                 ))}
-//       </Tabs>
-
-//       {info.pages.map((field, index) => (
-//             <TabPanel value={value} index={index} key={index}>
-//                 <Box>
-//                 <Grid container display={'flex'} justifyContent={'center'} padding={"5em"}>
-//                 {field.work.map((page, pageDex) => (
-                    
-                        
-//                     <Grid item xs={12} md={6} key={uuid()}>
-//                         <PagesBlock link={page.link} name={page.name} desc={page.desc} />
-//                     </Grid>
-                                      
-//                 ))}
-//                 </Grid>
-//                 </Box>  
-//             </TabPanel>
-//         ))}
-
-//     </Box>
-//   );
-// }
-
-
-
-// import React from 'react';
-// import PagesBlock from "./PagesBlock";
-// import {Box, Grid} from "@mui/material";
-// import {info} from "../../info/Info";
-
-// export default function Pages() {
-//     return (
-//         <Box>
-//             <Grid container display={'flex'} justifyContent={'center'} padding={"5em"}>
-//                 {info.pages.map((page, index) => (
-//                    <Grid item xs={12} md={6} key={index}>
-//                        <PagesBlock link={page.link} name={page.name} desc={page.desc} />
-//                    </Grid>
-//                 ))}
-//             </Grid>
-//         </Box>
-//     );
-// };

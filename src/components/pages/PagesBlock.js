@@ -1,23 +1,24 @@
 import React from 'react';
-import IconLink from "../portfolio/IconLink";
-import {Box} from "@mui/material";
+import {Box, Grid, Typography, Paper} from "@mui/material";
+
 
 function PagesBlock(props) {
    const {link, name, desc} = props;
 
    return (
-      <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
-         <Box component={'iframe'} src={link} alt={'mockup'} className={'page'} height={{xs: '20vh', md: '38vh'}} width={{xs: '20vh', md: '55vh'}}/>
-         <h1 style={{fontSize: '2rem'}}>{name}</h1>
-         <Box className={'portfolio'} display={'flex'} flexDirection={'column'} gap={'0.5rem'}
-              alignItems={'center'} fontSize={'1rem'} py={'1rem'} height={{xs: '20vh', md: '20vh'}} width={{xs: '20vh', md: '20vh'}}>
-            <Box p={1} border={'2px solid black'} borderRadius={'25px'}>
-               <IconLink link={"/"} title={name} icon={'fa fa-safari'}/>
-            </Box>
-            <Box p={1} border={'2px solid black'} borderRadius={'25px'}>
-               <IconLink link={"/"} title={desc} icon={'fa fa-code'}/>
-            </Box>
-         </Box>
+
+      <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>   
+         {/* This is the PDF rendering Box */}
+         <Box justifyContent={'center'} alignItems={'center'}>  <Typography sx={{ typography: { sm: 'h5', xs: 'h6' } }}> {name} </Typography> </Box>
+         <Box component={'iframe'} src={link} alt={'mockup'} className={'page'} height={{xs: '30vh', md: '38vh'}} width={{xs: '100%', md: '90%'}}/>
+         <Grid container height={{xs: '30vh', md: '25vh'}} width={{xs: '100%', md: '90%'}}>
+            {/* This should be the description box */}
+            <Grid item xs={12}  s={12} md={12} marginTop={'1vh'}>
+                 <Paper style={{backgroundColor:'#1f1f1f'}} variant='outline' elevation={10}>  
+                     <Typography variant='p' style={{fontSize:'10px'}}> {desc} </Typography> 
+                 </Paper>            
+            </Grid>
+         </Grid>            
       </Box>
    );
 }

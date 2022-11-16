@@ -130,19 +130,25 @@ export const info = {
             field:"Artificial Intelligence",
             work:[
                 {
-                    name:"AI1",
-                    desc:"Artificial Intellegence Assignment 1",
-                    link:"https://drive.google.com/file/d/1GPXVnaIDTQL2i03o20v_uzCC-kdQim94/preview"
+                    name:"Velocity Clamping in PSO",
+                    desc:"The Particle Swarm Optimization (PSO) metaheuristic is a commonly used, nature-inspired optimizer. It is shown by Poli and Broomhead that the swarm is guaranteed to reach eventual convergence if the heuristic's control parameters are chosen to satisfy a set of stability conditions. Velocity clamping has longly been used as a means to mitigate initial velocity explosion, and help the swarm reach convergence. This paper explores if there is still merit in using velocity clamping as a convergence mechanism, rather than the Poli stability conditions.",
+                    link:"https://drive.google.com/file/d/1GPXVnaIDTQL2i03o20v_uzCC-kdQim94/preview",
+                    tags: ["PSO", "Velocity Clamping", "Poli-Stability", "Single Objective Optimization"]
+
                 },
                 {
                     name:"AI2",
                     desc:"Artificial Intellegence Assignment 2",
-                    link:"https://drive.google.com/file/d/1NjFV-hHmLRbal1ap955a-BVYFqVaXPV2/preview"
+                    link:"https://drive.google.com/file/d/1NjFV-hHmLRbal1ap955a-BVYFqVaXPV2/preview",
+                    tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
+
                 },
                 {
                     name:"AI3",
                     desc:"Artificial Intellegence Assignment 3",
-                    link:"https://drive.google.com/file/d/1vwPgPoixEqq5ZTaZEYHKLxOMwIaj89Et/preview"
+                    link:"https://drive.google.com/file/d/1vwPgPoixEqq5ZTaZEYHKLxOMwIaj89Et/preview",
+                    tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
+
                 }
             ]
     
@@ -153,7 +159,9 @@ export const info = {
                 {
                     name:"ML2",
                     desc:"Machine Learning Assignment 2",
-                    link:"https://drive.google.com/file/d/1B0_83Ms3R4oGqj4dKgYUhYWoIBPZm4Yr/preview"
+                    link:"https://drive.google.com/file/d/1B0_83Ms3R4oGqj4dKgYUhYWoIBPZm4Yr/preview",
+                    tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
+
                 }
             ]
         },
@@ -163,71 +171,92 @@ export const info = {
                 {
                     name:"CompVis1",
                     desc:"Computer Vision Assignment 1",
-                    link:"https://drive.google.com/file/d/1LPSprBzTrOKcBd4cKjzAMaWH7svdeD_L/preview"
+                    link:"https://drive.google.com/file/d/1LPSprBzTrOKcBd4cKjzAMaWH7svdeD_L/preview",
+                    tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
                 }
                 ,
                 {
                     name:"CompVis2",
                     desc:"Computer Vision Assignment 2",
-                    link:"https://drive.google.com/file/d/1dr6QmDbi4YB7qCnINluGL0NFZ_CNS66d/preview"
+                    link:"https://drive.google.com/file/d/1dr6QmDbi4YB7qCnINluGL0NFZ_CNS66d/preview",
+                    tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
                 },
                 {
                     name:"CompVis3",
                     desc:"Computer Vision Assignment 3",
-                    link:"https://drive.google.com/file/d/1y3nr9k5LZb0L0PXiWG3EuAScUyGRUss4/preview"
+                    link:"https://drive.google.com/file/d/1y3nr9k5LZb0L0PXiWG3EuAScUyGRUss4/preview",
+                    tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
                 },
                 {
                     name:"CompVis4",
                     desc:"Computer Vision Assignment 4",
-                    link:"https://drive.google.com/file/d/1OlPc5mxjbnrcBuZs5QT9X9bsecJfD1aR/preview"
+                    link:"https://drive.google.com/file/d/1OlPc5mxjbnrcBuZs5QT9X9bsecJfD1aR/preview",
+                    tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
+
                 },
                 {
                     name:"CompVis5",
                     desc:"Computer Vision Assignment 5",
-                    link:"https://drive.google.com/file/d/1kEvQGjh25XYd1VXmLIxaxqWEnnAuy9GX/preview"
+                    link:"https://drive.google.com/file/d/1kEvQGjh25XYd1VXmLIxaxqWEnnAuy9GX/preview",
+                    tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
+
                 },
                 {
                     name:"CompVis6",
                     desc:"Computer Vision Assignment 6",
-                    link:"https://drive.google.com/file/d/15aYdj9hnFd8vI1-_ILSy0qGKMJQw4Lao/preview"
+                    link:"https://drive.google.com/file/d/15aYdj9hnFd8vI1-_ILSy0qGKMJQw4Lao/preview",
+                    tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
                 }
-            ]
-        },
-        {
-            field:"Digital Image Processing",
-            work:[
-                {
-                    name:"DIP1",
-                    desc:"Digital Image Processing 1",
-                    link:"https://drive.google.com/file/d/1IdBft3db2j7Iob5U5fZ-6S_ElHgmmM8w/preview"
-                },
-                {
-                    name:"DIP2",
-                    desc:"Digital Image Processing 2",
-                    link:"https://drive.google.com/file/d/1zs-h8toT_jJexTy7iC-l6apZCP1hymUf/preview"
-                },
-                {
-                    name:"DIP3",
-                    desc:"Digital Image Processing 3",
-                    link:"https://drive.google.com/file/d/1vyH97HJl7Y1Hn6kGJnf3oelFRNxTjB7X/preview"
-                },
-                {
-                    name:"DIP4",
-                    desc:"Digital Image Processing 4",
-                    link:"https://drive.google.com/file/d/1OlD9Ip7_RiDKwEauHxicPtN53RFXT0s8/preview"
-                },
-                {
-                    name:"DIP5",
-                    desc:"Digital Image Processing 5",
-                    link:"https://drive.google.com/file/d/1jK8bryA4Ht-ZDORqqj8FntohF7vVy6-5/preview"
-                },
-                {
-                    name:"DIP6",
-                    desc:"Digital Image Processing 6",
-                    link:"https://drive.google.com/file/d/1jJQeI5Zgs6G2r7OcBfqs15X9QkUa2gEF/preview"
-                }
-                
             ]
         }
+        // ,
+        // {
+        //     field:"Image Processing",
+        //     work:[
+        //         {
+        //             name:"DIP1",
+        //             desc:"Digital Image Processing 1",
+        //             link:"https://drive.google.com/file/d/1IdBft3db2j7Iob5U5fZ-6S_ElHgmmM8w/preview",
+        //             tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
+
+        //         },
+        //         {
+        //             name:"DIP2",
+        //             desc:"Digital Image Processing 2",
+        //             link:"https://drive.google.com/file/d/1zs-h8toT_jJexTy7iC-l6apZCP1hymUf/preview",
+        //             tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
+
+        //         },
+        //         {
+        //             name:"DIP3",
+        //             desc:"Digital Image Processing 3",
+        //             link:"https://drive.google.com/file/d/1vyH97HJl7Y1Hn6kGJnf3oelFRNxTjB7X/preview",
+        //             tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
+
+        //         },
+        //         {
+        //             name:"DIP4",
+        //             desc:"Digital Image Processing 4",
+        //             link:"https://drive.google.com/file/d/1OlD9Ip7_RiDKwEauHxicPtN53RFXT0s8/preview",
+        //             tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
+
+        //         },
+        //         {
+        //             name:"DIP5",
+        //             desc:"Digital Image Processing 5",
+        //             link:"https://drive.google.com/file/d/1jK8bryA4Ht-ZDORqqj8FntohF7vVy6-5/preview",
+        //             tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
+
+        //         },
+        //         {
+        //             name:"DIP6",
+        //             desc:"Digital Image Processing 6",
+        //             link:"https://drive.google.com/file/d/1jJQeI5Zgs6G2r7OcBfqs15X9QkUa2gEF/preview",
+        //             tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
+
+        //         }
+                
+        //     ]
+        // }
     ]
 }
