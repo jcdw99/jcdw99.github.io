@@ -1,8 +1,7 @@
 {
-  "homepage": "https://jcdw99.github.io/jcdw99.github.io",
-  "name": "justin",
+  "homepage": "https://jcdw99.github.io/",
+  "name": "my-app",
   "version": "2.0.0",
-  "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
