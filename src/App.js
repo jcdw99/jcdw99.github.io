@@ -16,7 +16,7 @@ function App() {
       <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <div>
-         <BrowserRouter>
+         <BrowserRouter basename={process.env.PUBLIC_URL}>
             <BaseLayout/>
          </BrowserRouter>
       </div>
