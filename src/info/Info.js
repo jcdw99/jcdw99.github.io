@@ -24,6 +24,10 @@ export const info = {
         {
             emoji: "✔",
             text: "Computer Vision"
+        },
+        {
+            emoji: "✔",
+            text: "Linear Algebra"
         }
     ],
     socials: [
@@ -92,7 +96,7 @@ export const info = {
                 },
                 {
                     name:"Multi-Objective PSO",
-                    desc:"In some scenarious we need to optimize with respect to potentially conflicting objectives. In this paper I explored the merits of multi-guided particle swarm optimization, and a speciation-based equivalent. There does not exist a function which values the rate-of-substitution between the conflicting objectives, so a set of Pareto-optimal solutions is maintained during the search procedure. ",
+                    desc:"In some scenarious we need to optimize with respect to potentially conflicting objectives. In this paper I explored the merits of multi-guided particle swarm optimization, and a speciation-based equivalent. In this context, there does not exist a function that specifies the rate-of-substitution between the conflicting objectives, so a set of Pareto-optimal solutions is maintained during the search procedure. ",
                     link:"https://drive.google.com/file/d/1NjFV-hHmLRbal1ap955a-BVYFqVaXPV2/preview",
                     tags: ["Multi-Guided PSO", "Speciation PSO", "Pareto Optimal Front", "Multi-Objective Optimization"],
                     github: "https://github.com/jcdw99/AI_Assignment_2"
@@ -140,41 +144,42 @@ export const info = {
             field:"Computer Vision",
             work:[
                 {
-                    name:"CompVis5",
-                    desc:"Computer Vision Assignment 5",
-                    link:"https://drive.google.com/file/d/1kEvQGjh25XYd1VXmLIxaxqWEnnAuy9GX/preview",
-                    tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
+                    name:"Facial Rec Using PCA and Bag-Of-Words",
+                    desc:"In this paper we implement a facial recognition system by decomposing each image in \"Face-Space\" to a low(er) dimensional representation. We thereafter find a eigenbasis for this space, and represent each face as its coordinate combination. In the subsequent section of the paper, we implement a scene classifier using bag-of-words dimension reduction techniques, and an array of one-to-one support vector machines.",
+                    link:"https://drive.google.com/file/d/1NsMC5BychJoneRbsoUqSt74LSTy4RC-V/preview",
+                    tags: ["Principle Component Analysis", "Support Vector Machines", "K-Nearest Neighbors", "Eigenfaces", "Bag-Of-Words"],
+                    github: "https://github.com/jcdw99/CV_Assignment_5"
 
                 },
                 {
-                    name:"CompVis4",
-                    desc:"Computer Vision Assignment 4",
-                    link:"https://drive.google.com/file/d/1OlPc5mxjbnrcBuZs5QT9X9bsecJfD1aR/preview",
-                    tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
+                    name:"Calibration of a Stereo Camera System",
+                    desc:"In this paper we configure a stereo camera system using a set of SIFT feature matches between two images taken from different perspectives. After RANSAC methods are applied to filter incorrect SIFT pairs, each point can be triangulated to obtain a 3D rendering of the image content. Thereafter, we perform image rectification to match the perspectives of both images, to facilitate fast subsequent feature matches by traversing the corresponding epipolar lines. ",
+                    link:"https://drive.google.com/file/d/160auyNxBDX4OanV7_074cGNqLmUze8rn/preview",
+                    tags: ["RANSAC", "Image Rectification", "Homography", "Epipolar Lines"]
 
                 },
                 {
-                    name:"CompVis3",
-                    desc:"Computer Vision Assignment 3",
-                    link:"https://drive.google.com/file/d/1y3nr9k5LZb0L0PXiWG3EuAScUyGRUss4/preview",
-                    tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
+                    name:"Epipolar Geometry from Point Correspondences",
+                    desc:"In this paper we use the known dimensions of a single lego brick to determine the intrinsic and extrinsic properties of the camera used to take the two photos. From these properties we estimate the XYZ location of the structure, as well as the camera positions at the time of taking the photos. We may use the estimated real-world coordinates to build a 3D rendering of the photo content, and the cameras.",
+                    link:"https://drive.google.com/file/d/1UglezP07QbzAifhtfGZbw8MpDIKnbm-j/preview",
+                    tags: ["Camera Calibration", "Epipolar Lines"]
                 },
                 {
-                    name:"CompVis2",
-                    desc:"Computer Vision Assignment 2",
-                    link:"https://drive.google.com/file/d/1dr6QmDbi4YB7qCnINluGL0NFZ_CNS66d/preview",
-                    tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
+                    name:"Perspective Distortion Using Homographies",
+                    desc:"In this paper we apply basic linear algebra concepts to distort images. Thereafter, we use two photos and a set of static correspondences to estimate a homography that unifies the perspective between the images. Once the image perspectives agree, we can stitch the photos together to extend the frame of view, similar to a panaramic setup.",
+                    link:"https://drive.google.com/file/d/1LKuMQgCtB7mxM3FczHYz5xOXlKV2nXBa/preview",
+                    tags: ["Homographies", "SIFT", "Image Stitching"]
                 },
                 {
                     name:"CompVis1",
                     desc:"Computer Vision Assignment 1",
-                    link:"https://drive.google.com/file/d/1LPSprBzTrOKcBd4cKjzAMaWH7svdeD_L/preview",
+                    link:"https://drive.google.com/file/d/1nxeBmZmAjlO-Sv-0spHWop4iYtVXI5t9/preview",
                     tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
                 },      
                 {
-                    name:"CompVis6",
+                    name:"CNN: Fresh and with Transfer Learning",
                     desc:"Computer Vision Assignment 6",
-                    link:"https://drive.google.com/file/d/15aYdj9hnFd8vI1-_ILSy0qGKMJQw4Lao/preview",
+                    link:"https://drive.google.com/file/d/171YWAXLhoE7M95yoxN4k7cvqZTe8dOjU/preview",
                     tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
                 }
             ]
