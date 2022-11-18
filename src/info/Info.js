@@ -1,6 +1,6 @@
 
 import self4 from "../img/self4.jpg"
-import mock5 from "../img/mock5.png"
+import proj1 from "../img/project_1.png"
 
 export let colors = ["rgb(0,100,100)", "rgb(255,255,255)"];
 
@@ -48,37 +48,14 @@ export const info = {
         }
 
     ],
-    bio: "Hi",
-    skills:
-        {
-            proficientWith: ['I', 'am', 'good'],
-            exposedTo: ['at', 'everything']
-        }
-    ,
-    hobbies: [
-        {
-            label: 'one',
-            emoji: '✔'
-        },
-        {
-            label: 'two',
-            emoji: '✔'
-        },
-        {
-            label: 'three',
-            emoji: '✔'
-        },
-        {
-            label: 'four',
-            emoji: '✔'
-        }
-    ],
+
     portfolio: [
         {
-            title: "Project 5",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock5
+            name: "MoonBoard Grader",
+            github: "https://github.com/jcdw99/MoonBoard-Classifier",
+            image: proj1,
+            desc: '',
+            tags: ['tag1', 'tag2']
         }
     ],
 
