@@ -50,7 +50,7 @@ export default function FullWidthTabs() {
 
   return (
     <Box width='100%'>
-      <AppBar position="static" style={{marginTop:'1em'}}>
+      <AppBar position="absolute" style={{marginTop:'4.3rem'}}>
       <Tabs
         value={value}
         onChange={handleChange}
@@ -70,6 +70,7 @@ export default function FullWidthTabs() {
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={value}
         onChangeIndex={handleChangeIndex}
+        style={{marginTop:'2rem'}}
       >
       {info.pages.map((field, index) => (
             <TabPanel value={value} index={index} key={index}>

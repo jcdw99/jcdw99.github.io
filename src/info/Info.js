@@ -161,54 +161,53 @@ export const info = {
                 }
             ]
         }
-        // ,
-        // {
-        //     field:"Image Processing",
-        //     work:[
-        //         {
-        //             name:"DIP1",
-        //             desc:"Digital Image Processing 1",
-        //             link:"https://drive.google.com/file/d/1IdBft3db2j7Iob5U5fZ-6S_ElHgmmM8w/preview",
-        //             tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
+        ,
+        {
+            field:"Image Processing",
+            work:[
+                {
+                    name:"Similarity Using Fourier Description",
+                    desc:"In this paper I attempt to find the candidate leaf which is most similar to that at the center of the Canadian flag, by computing and comparing the Fourier descriptors of each image. It is possible to adjust the Fourier descriptors such that they are invariant to changes in scale, rotation, translation, and a change in starting point of the contour. These properties make the method an attractive option for similarity estimation.",
+                    link:"https://drive.google.com/file/d/1jJQeI5Zgs6G2r7OcBfqs15X9QkUa2gEF/preview",
+                    tags: ["Fourier Description", "Image Binarization", "Otsu's Method", "Erosion"]
+                },
+                {
+                    name:"Morphological Processing",
+                    desc:"In some scenarios an image must be processed in order to make it more understandable for computers or other machinery. In this context it is useful to binarize an image, where the area of interst is dispalyed in white. If the image contains complex or organic structures, binarization can be difficult. In this paper I've explored the binarization and identification procedure concerning a set of complex images. Automatic feature detection is implemented using convolutional techniques, or contour comparison.",
+                    link:"https://drive.google.com/file/d/1jK8bryA4Ht-ZDORqqj8FntohF7vVy6-5/preview",
+                    tags: ["Convolution", "Dilation and Erosion", "Skeletonization", "Hit-Miss Transform", "Masking"]
 
-        //         },
-        //         {
-        //             name:"DIP2",
-        //             desc:"Digital Image Processing 2",
-        //             link:"https://drive.google.com/file/d/1zs-h8toT_jJexTy7iC-l6apZCP1hymUf/preview",
-        //             tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
+                },
+                {
+                    name:"Restoration Using Fourier Transforms",
+                    desc:"In this paper we demonstrate an advanced method to help mitigate the effects of noise within an image. The Convolution Theorem states that the point-wise product of the Fourier transforms of a pair of functions yields their convolution. In image processing, physical space convolution (using a mask) is computationally demanding; a quartic runtime. We achieve fast convolution using the Fourier transforms. ",
+                    link:"https://drive.google.com/file/d/1OlD9Ip7_RiDKwEauHxicPtN53RFXT0s8/preview",
+                    tags: ["Wiener Filter", "Convolution Theorem", "Cutoff Filter"]
 
-        //         },
-        //         {
-        //             name:"DIP3",
-        //             desc:"Digital Image Processing 3",
-        //             link:"https://drive.google.com/file/d/1vyH97HJl7Y1Hn6kGJnf3oelFRNxTjB7X/preview",
-        //             tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
+                },
+                {
+                    name:"Correction Via Frequency Filtering",
+                    desc:"Periodic noise can be observed in the Fourier transform of the damaged image. The regular noise can be mitigated if filters are applied to frequencies of the associated transform that correspond to regular damage. In this paper we use frequency filtering to mitigate the effects of blurring, physical obstruction, and transmission noise imposed on the images taken by the Mariner Spacecraft in 1965. ",
+                    link:"https://drive.google.com/file/d/1vyH97HJl7Y1Hn6kGJnf3oelFRNxTjB7X/preview",
+                    tags: ["Convolution Theorem", "Frequency Filtering", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
 
-        //         },
-        //         {
-        //             name:"DIP4",
-        //             desc:"Digital Image Processing 4",
-        //             link:"https://drive.google.com/file/d/1OlD9Ip7_RiDKwEauHxicPtN53RFXT0s8/preview",
-        //             tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
+                }
+                ,
+                {
+                    name:"Image Correction Using Spatial Methods",
+                    desc:"In many situations images may be under or over illuminated, making it difficult to view certain features of the image. Sometimes there is insufficient diversity in the range of pixel intensities in the image. In this paper we implement a host of methods which are popularly cited to improve the intensity, or contrast of the base image. These techniques involve idnetifying a point transformation which may be applied to each pixel of the damaged image. ",
+                    link:"https://drive.google.com/file/d/1zs-h8toT_jJexTy7iC-l6apZCP1hymUf/preview",
+                    tags: ["Histogram Equalization", "Gamma Equalization", "Contrast Stretching", "Median Filteration"]
 
-        //         },
-        //         {
-        //             name:"DIP5",
-        //             desc:"Digital Image Processing 5",
-        //             link:"https://drive.google.com/file/d/1jK8bryA4Ht-ZDORqqj8FntohF7vVy6-5/preview",
-        //             tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
+                },
+                {
+                    name:"Color Models and Processing",
+                    desc:"Humans posess trichromatic vision, we have receptors that are sensitive to red, green and blue light. A wide range of colors can be represented by combining differing magnitudes of each color channel. In this paper we show this result, and explore methods of converting between popular color channels including RGB, CMYK, and HSV. Thereafter notion of a \"color gambut\" is explained using examples of coordinate combination decomposition.",
+                    link:"https://drive.google.com/file/d/1IdBft3db2j7Iob5U5fZ-6S_ElHgmmM8w/preview",
+                    tags: ["Color Models", "Chromaticity Diagram", "Chromaticity Decomposition", "Colour Gambut"]
 
-        //         },
-        //         {
-        //             name:"DIP6",
-        //             desc:"Digital Image Processing 6",
-        //             link:"https://drive.google.com/file/d/1jJQeI5Zgs6G2r7OcBfqs15X9QkUa2gEF/preview",
-        //             tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
-
-        //         }
-                
-        //     ]
-        // }
+                }
+            ]
+        }
     ]
 }

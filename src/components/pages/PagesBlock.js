@@ -19,7 +19,7 @@ function PagesBlock(props) {
                <SocialIcon key={name} icon={""} label={""} />
             }
          </Box>
-         <Box component={'iframe'} src={link} alt={'mockup'} className={'page'} height={{xs: '30vh', md: '38vh'}} width={{xs: '100%', md: '90%'}}/>
+         <Box component={'iframe'} src={link} alt={'mockup'} className={'page'} height={{xs: '30vh', md: '50vh'}} width={{xs: '100%', md: '90%'}}/>
          <Grid container margin={{xs:"0 0 5vh 0"}} height={{xs: 'auto', md: '25vh'}} width={{xs: '100%', md: '90%'}}>
             {/* This should be the description box */}
             <Grid item xs={12}  s={12} md={12} marginTop={'1vh'}>
