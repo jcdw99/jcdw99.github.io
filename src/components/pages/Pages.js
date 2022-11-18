@@ -70,7 +70,7 @@ export default function FullWidthTabs() {
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={value}
         onChangeIndex={handleChangeIndex}
-        style={{marginTop:'2rem'}}
+        style={{marginTop:'5vh'}}
       >
       {info.pages.map((field, index) => (
             <TabPanel value={value} index={index} key={index}>
