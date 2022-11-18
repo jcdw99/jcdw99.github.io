@@ -171,16 +171,16 @@ export const info = {
                     tags: ["Homographies", "SIFT", "Image Stitching"]
                 },
                 {
-                    name:"CompVis1",
-                    desc:"Computer Vision Assignment 1",
+                    name:"Correction and Feature Detection",
+                    desc:"In this paper I've implemented popular image alteration methods like contrast stretching based off of a hyperbolic tangent function, median filteration for salt-and-pepper noise, and image sharpening through unsharp masking. Thereafter we implement image resizing using bilinear interpolation. Finally, we introduce feature matching using SIFT.",
                     link:"https://drive.google.com/file/d/1nxeBmZmAjlO-Sv-0spHWop4iYtVXI5t9/preview",
                     tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
                 },      
                 {
                     name:"CNN: Fresh and with Transfer Learning",
-                    desc:"Computer Vision Assignment 6",
+                    desc:"In this paper we implement a convolution neural network using the popular PyTorch library. We are attempting to classify a set of images with nine classes. We find that the model quickly overfits, which is somewhat mitigated thereafter using random dropout and data augmentation. ",
                     link:"https://drive.google.com/file/d/171YWAXLhoE7M95yoxN4k7cvqZTe8dOjU/preview",
-                    tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
+                    tags: ["CNN", "Transfer Learning", "Regularization", "Image Classification"]
                 }
             ]
         }

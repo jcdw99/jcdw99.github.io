@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.module.scss';
 import BaseLayout from "./components/BaseLayout";
-import {BrowserRouter} from "react-router-dom";
+import {HashRouter} from "react-router-dom";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
@@ -16,9 +16,9 @@ function App() {
       <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <div>
-         <BrowserRouter basename={process.env.PUBLIC_URL}>
+         <HashRouter basename={process.env.PUBLIC_URL}>
             <BaseLayout/>
-         </BrowserRouter>
+         </HashRouter>
       </div>
       </ThemeProvider>
    );
