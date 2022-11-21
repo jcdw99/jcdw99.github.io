@@ -79,7 +79,7 @@ export default function FullWidthTabs() {
                   {field.work.map((page, pageDex) => (
                       
                       <Grid item xs={12} md={6} key={uuid()}>
-                          <PagesBlock link={page.link} name={page.name} desc={page.desc} tags={page.tags} github={page.github} />
+                          <PagesBlock encrypt={page.encrypt} preview={page.preview} name={page.name} desc={page.desc} tags={page.tags} github={page.github} />
                       </Grid>
                                         
                   ))}
