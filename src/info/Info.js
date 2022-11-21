@@ -120,8 +120,6 @@ export const info = {
                 }
             ]
 
-
-
         },
         {
             field:"Computer Vision",
@@ -130,7 +128,7 @@ export const info = {
                     name:"Facial Rec Using PCA and Bag-Of-Words",
                     desc:"In this paper we implement a facial recognition system by decomposing each image in \"Face-Space\" to a low(er) dimensional representation. We thereafter find a eigenbasis for this space, and represent each face as its coordinate combination. In the subsequent section of the paper, we implement a scene classifier using bag-of-words dimension reduction techniques, and an array of one-to-one support vector machines.",
                     encrypt:"https://drive.google.com/file/d/14FKGODf5S4RWqbhBRU6v5QOS8MJd1SY7/preview",
-                    preview:"",
+                    preview:"https://drive.google.com/file/d/1Evs6hX9j0H3SHrbCxr_sDFg6U-TrurTU/preview",
                     tags: ["Principle Component Analysis", "Support Vector Machines", "K-Nearest Neighbors", "Eigenfaces", "Bag-Of-Words"],
                     // github: "https://github.com/jcdw99/CV_Assignment_5"
 
@@ -139,7 +137,7 @@ export const info = {
                     name:"Calibration of a Stereo Camera System",
                     desc:"In this paper we configure a stereo camera system using a set of SIFT feature matches between two images taken from different perspectives. After RANSAC methods are applied to filter incorrect SIFT pairs, each point can be triangulated to obtain a 3D rendering of the image content. Thereafter, we perform image rectification to match the perspectives of both images, to facilitate fast subsequent feature matches by traversing the corresponding epipolar lines. ",
                     encrypt:"https://drive.google.com/file/d/17_2CjztRffgkNpRliqI2REW43LEqrSwE/preview",
-                    preview:"",
+                    preview:"https://drive.google.com/file/d/1anEVTVhNPHQN-zproSs42S7IkoPU-1-p/preview",
                     tags: ["RANSAC", "Image Rectification", "Homography", "Epipolar Lines"]
 
                 },
@@ -147,28 +145,28 @@ export const info = {
                     name:"Epipolar Geometry from Point Correspondences",
                     desc:"In this paper we use the known dimensions of a single lego brick to determine the intrinsic and extrinsic properties of the camera used to take the two photos. From these properties we estimate the XYZ location of the structure, as well as the camera positions at the time of taking the photos. We may use the estimated real-world coordinates to build a 3D rendering of the photo content, and the cameras.",
                     encrypt:"https://drive.google.com/file/d/1HNrpsT3yGwX8h9xHqz_8vtnluce4jZLg/preview",
-                    preview:"",
+                    preview:"https://drive.google.com/file/d/1qlWpFhlOpqdtHijE6poC_gP7ff_Lf5Ja/preview",
                     tags: ["Camera Calibration", "Epipolar Lines"]
                 },
                 {
                     name:"Perspective Distortion Using Homographies",
                     desc:"In this paper we apply basic linear algebra concepts to distort images. Thereafter, we use two photos and a set of static correspondences to estimate a homography that unifies the perspective between the images. Once the image perspectives agree, we can stitch the photos together to extend the frame of view, similar to a panaramic setup.",
                     encrypt:"https://drive.google.com/file/d/12C_-9O69gZ--rbX305v4YllRUwAqbRp5/preview",
-                    preview:"",
+                    preview:"https://drive.google.com/file/d/1WHw4dfvNonaECJbrBzteNzsTmWulYpde/preview",
                     tags: ["Homographies", "SIFT", "Image Stitching"]
                 },
                 {
                     name:"Correction and Feature Detection",
                     desc:"In this paper I've implemented popular image alteration methods like contrast stretching based off of a hyperbolic tangent function, median filteration for salt-and-pepper noise, and image sharpening through unsharp masking. Thereafter we implement image resizing using bilinear interpolation. Finally, we introduce feature matching using SIFT.",
                     encrypt:"https://drive.google.com/file/d/19grgolLndZREmKmUwRTQxtBw3O2C_15P/preview",
-                    preview:"",
+                    preview:"https://drive.google.com/file/d/1YOi1cnVvsTXzkXC63TNf8OqhPzXOvLft/preview",
                     tags: ["Contrast Stretching", "Median Filteration", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
                 },      
                 {
                     name:"CNN: Fresh and with Transfer Learning",
                     desc:"In this paper we implement a convolution neural network using the popular PyTorch library. We are attempting to classify a set of images with nine classes. We find that the model quickly overfits, which is somewhat mitigated thereafter using random dropout and data augmentation. ",
                     encrypt:"https://drive.google.com/file/d/1NaF4TT4kkbIp5ENjHMshYhQtGkpvfi3G/preview",
-                    preview:"",
+                    preview:"https://drive.google.com/file/d/1lP3Nw74m0EItUy3hmRRBME1MurxqtuEC/preview",
                     tags: ["CNN", "Transfer Learning", "Regularization", "Image Classification"]
                 }
             ]
@@ -181,14 +179,14 @@ export const info = {
                     name:"Similarity Using Fourier Description",
                     desc:"In this paper I attempt to find the candidate leaf which is most similar to that at the center of the Canadian flag, by computing and comparing the Fourier descriptors of each image. It is possible to adjust the Fourier descriptors such that they are invariant to changes in scale, rotation, translation, and a change in starting point of the contour. These properties make the method an attractive option for similarity estimation.",
                     encrypt:"https://drive.google.com/file/d/1NaF4TT4kkbIp5ENjHMshYhQtGkpvfi3G/preview",
-                    preview:"",
+                    preview:"https://drive.google.com/file/d/1VBheNzEGKAkB39Xr9Eywv_BKfzDcs_Af/preview",
                     tags: ["Fourier Description", "Image Binarization", "Otsu's Method", "Erosion"]
                 },
                 {
                     name:"Morphological Processing",
                     desc:"In some scenarios an image must be processed in order to make it more understandable for computers or other machinery. In this context it is useful to binarize an image, where the area of interst is dispalyed in white. If the image contains complex or organic structures, binarization can be difficult. In this paper I've explored the binarization and identification procedure concerning a set of complex images. Automatic feature detection is implemented using convolutional techniques, or contour comparison.",
                     encrypt:"https://drive.google.com/file/d/1SOo4AaK8n68X_3uoMtTr5DL4KVq8UFM9/preview",
-                    preview:"",
+                    preview:"https://drive.google.com/file/d/17fkFWtnNTVSmmTWdXwlbDRJmIW-goYx3/preview",
                     tags: ["Convolution", "Dilation and Erosion", "Skeletonization", "Hit-Miss Transform", "Masking"]
 
                 },
@@ -196,7 +194,7 @@ export const info = {
                     name:"Restoration Using Fourier Transforms",
                     desc:"In this paper we demonstrate an advanced method to help mitigate the effects of noise within an image. The Convolution Theorem states that the point-wise product of the Fourier transforms of a pair of functions yields their convolution. In image processing, physical space convolution (using a mask) is computationally demanding; a quartic runtime. We achieve fast convolution using the Fourier transforms. ",
                     encrypt:"https://drive.google.com/file/d/1mVJwcEbFdTEHPs74QUI3oyNSI0Y2Izj0/preview",
-                    preview:"",
+                    preview:"https://drive.google.com/file/d/1s8BTreFQrDS6b3hnBx1nDPS9X4UccOr8/preview",
                     tags: ["Wiener Filter", "Convolution Theorem", "Cutoff Filter"]
 
                 },
@@ -204,7 +202,7 @@ export const info = {
                     name:"Correction Via Frequency Filtering",
                     desc:"Periodic noise can be observed in the Fourier transform of the damaged image. The regular noise can be mitigated if filters are applied to frequencies of the associated transform that correspond to regular damage. In this paper we use frequency filtering to mitigate the effects of blurring, physical obstruction, and transmission noise imposed on the images taken by the Mariner Spacecraft in 1965. ",
                     encrypt:"https://drive.google.com/file/d/102XZ-tmFYc-lTxMTd52lzX7tcdaxm1TZ/preview",
-                    preview:"",
+                    preview:"https://drive.google.com/file/d/1k1Nd8Bj73qUmL4pQ_qdb48xadSj4OpQ7/preview",
                     tags: ["Convolution Theorem", "Frequency Filtering", "Sharpening", "Bilinear Interpolation", "SIFT Matching"]
 
                 }
@@ -213,7 +211,7 @@ export const info = {
                     name:"Image Correction Using Spatial Methods",
                     desc:"In many situations images may be under or over illuminated, making it difficult to view certain features of the image. Sometimes there is insufficient diversity in the range of pixel intensities in the image. In this paper we implement a host of methods which are popularly cited to improve the intensity, or contrast of the base image. These techniques involve idnetifying a point transformation which may be applied to each pixel of the damaged image. ",
                     encrypt:"https://drive.google.com/file/d/1hBGlC39GVD6hJYrSgzvgOX8Aaci0iNhl/preview",
-                    preview:"",
+                    preview:"https://drive.google.com/file/d/1xAhV8mF5-qnFSUv7EqSHSu5nIvkmny7f/preview",
                     tags: ["Histogram Equalization", "Gamma Equalization", "Contrast Stretching", "Median Filteration"]
 
                 },
@@ -221,7 +219,7 @@ export const info = {
                     name:"Color Models and Processing",
                     desc:"Humans posess trichromatic vision, we have receptors that are sensitive to red, green and blue light. A wide range of colors can be represented by combining differing magnitudes of each color channel. In this paper we show this result, and explore methods of converting between popular color channels including RGB, CMYK, and HSV. Thereafter notion of a \"color gambut\" is explained using examples of coordinate combination decomposition.",
                     encrypt:"https://drive.google.com/file/d/1syQPgQEHBiQjb-OyT1WHNvMFNR9P0-l-/preview",
-                    preview:"",
+                    preview:"https://drive.google.com/file/d/1DW4zWIKvjE2iYcbKEZavjru0K-ySta2b/preview",
                     tags: ["Color Models", "Chromaticity Diagram", "Chromaticity Decomposition", "Colour Gambut"]
 
                 }
