@@ -12,7 +12,7 @@ export default function About() {
     console.log(height)
     return (
         <Box display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'3rem'}>
-            <iframe title='pdf' src={pdf} width={Math.round(width * 0.7)} height={Math.round(height * 0.85)} />
+            {/* <iframe title='pdf' src={pdf} width={Math.round(width * 0.7)} height={Math.round(height * 0.85)} /> */}
         </Box>
     )
 }
