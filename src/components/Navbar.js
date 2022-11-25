@@ -34,7 +34,7 @@ export default function Navbar({darkMode, handleClick}) {
     const [active, setActive] = useState(location.pathname === '/' ? 'home' : location.pathname.slice(1, location.pathname.length));
 
     return (
-        <Box component={'nav'} width={'100%'}>
+        <Box component={'nav'} width={'100%'} paddingTop={'1rem'}>
             <Box component={'ul'} display={'flex'} justifyContent={'center'} alignItems={'center'}
                  gap={{xs: '2rem', md: '8rem'}}
                  textTransform={'lowercase'} fontSize={'1rem'}>
@@ -42,8 +42,7 @@ export default function Navbar({darkMode, handleClick}) {
                     <Box key={index} component={'li'} className={(link.active === active && !link.type) && Style.active}
                          sx={{borderImageSource: info.gradient}}>
                         <Link to={link.to} onClick={() => setActive(link.active)}>
-                            {!link.type && <p style={{paddingBottom: '0.5rem'}}>{link.name}</p>}
-                            {link.type && <h1>{link.name}</h1>}
+                            {<h3 style={{paddingBottom: '0.5rem'}}>{link.name}</h3>}
                         </Link>
                     </Box>
                 ))}

@@ -7,6 +7,7 @@ import Pages from './pages/Pages';
 import Portfolio from "./portfolio/Portfolio";
 import {Route, Routes} from "react-router-dom";
 import {Box, Grid} from "@mui/material";
+import ParticlesBackground from './ParticlesBackground';
 
 export default function BaseLayout() {
    // default darkmode / lightmode state
@@ -17,7 +18,8 @@ export default function BaseLayout() {
    }
 
    return (
-      <Box className={darkMode ? Style.dark : Style.light}>
+      <Box className={darkMode ? Style.dark : Style.light} >
+         <ParticlesBackground />
          <Grid container display={'flex'} flexDirection={'column'} minHeight={'100vh'}
                justifyContent={'space-between'}>
             <Grid item>
@@ -40,6 +42,7 @@ export default function BaseLayout() {
                </Box>
             </Grid>
          </Grid>
+        
       </Box>
    )
 }
