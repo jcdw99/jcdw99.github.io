@@ -1,21 +1,22 @@
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import useWindowDimensions from "./WindowDim"
+
+
 
 export default function ParticlesBackground() {
     const particlesInit = useCallback(async engine => {
-        // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
         await loadFull(engine);
     }, []);
 
-
+    const { height, width } = useWindowDimensions();
     return (
+
         <Particles
             id="tsparticles"
             init={particlesInit}
-            opacity="0.3"
+            opacity="0.1"
             options={{
                 fullScreen: {
                     enable: true,
@@ -30,14 +31,14 @@ export default function ParticlesBackground() {
                 interactivity: {
                     events: {
                         onClick: {
-                            enable: false,
+                            enable: true,
                             mode: "push",
                         },
-                        onHover: {
-                            enable: false,
-                            mode: "repulse",
+                    },
+                    modes: {
+                        push: {
+                            quantity: 1,
                         },
-                        resize: true,
                     },
                 },
                 particles: {
@@ -46,9 +47,9 @@ export default function ParticlesBackground() {
                     },
                     links: {
                         color: "#ffffff",
-                        distance: 180,
+                        distance: Math.round(Math.max(width, height) / 10),
                         enable: true,
-                        opacity: 0.2,
+                        opacity: 0.15,
                         width: 1,
                     },
                     collisions: {
@@ -61,15 +62,15 @@ export default function ParticlesBackground() {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 0.1,
-                        straight: false,
+                        speed: 0.11,
+                        straight: true,
                     },
                     number: {
                         density: {
                             enable: true,
-                            area: 800,
+                            area: width,
                         },
-                        value: 100,
+                        value: Math.round(Math.max(width, height)/7),
                     },
                     opacity: {
                         value: 0.15,
@@ -78,7 +79,8 @@ export default function ParticlesBackground() {
                         type: "circle",
                     },
                     size: {
-                        value: { min: 2, max: 5 },
+                   
+                        value: { min: 2, max: 5}
                     },
                 },
                 detectRetina: true,
