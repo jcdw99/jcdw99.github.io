@@ -11,8 +11,8 @@ export default function ParticlesBackground() {
     }, []);
 
     const { height, width } = useWindowDimensions();
+    const connection_dist = Math.max(height, width) > 500 ? 100: 180;
     return (
-
         <Particles
             id="tsparticles"
             init={particlesInit}
@@ -47,7 +47,7 @@ export default function ParticlesBackground() {
                     },
                     links: {
                         color: "#ffffff",
-                        distance: Math.round(Math.max(width, height) / 10),
+                        distance: connection_dist,
                         enable: true,
                         opacity: 0.15,
                         width: 1,
