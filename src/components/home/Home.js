@@ -11,7 +11,7 @@ import useWindowDimensions from "../WindowDim"
 export default function Home() {
 
    const { height, width } = useWindowDimensions();
-   const fontsize = Math.min(height, width) > 500 ? '35px':'25px'
+   const fontsize = Math.min(height, width) > 500 ? '40px':'30px'
    
    return (
       <Box component={'main'} display={'flex'} flexDirection={{xs: 'column', md: 'column'}} alignItems={'center'} 
@@ -19,10 +19,10 @@ export default function Home() {
          <Box className={classNames(Style.avatar, Style.shadowed)} alt={'image of developer'} style={{background: info.gradient}} component={'img'} src={info.selfPortrait} width={{xs: '35vh', md: '40vh'}}
               height={{xs: '35vh', md: '40vh'}} marginTop={'2rem'}
               borderRadius={'60%'} p={'0.25rem'} mb={{xs: '1rem', sm: 0}} mr={{xs: 0, md: '2rem'}}/>
-            <Typography  marginTop={'1rem'} variant='h4' noWrap={true} alignContent={'center'} overflow={'visible'} fontWeight="bold" style={{fontSize:fontsize}}>
-               Hi, I'm &nbsp;
-               <Typed  showCursor={false} strings={["Justin De Witt"]} typeSpeed={30} style={{fontWeight:'bold', background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}/>
-            </Typography>
+               <Typography  marginTop={'1rem'} variant='h4' noWrap={true} alignContent={'left'} overflow={'visible'} fontWeight="bold" style={{fontSize:fontsize}}>
+                  Hi, I'm&nbsp;
+                  <Typed  showCursor={false} strings={["Justin De Witt"]} typeSpeed={30} style={{fontWeight:'bold', background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}/>
+               </Typography>
          <Box>
    
                {/* <h1>Hi, I'm <span style={{background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>{info.firstName}</span><span className={Style.hand}>🤚</span> </h1> */}
