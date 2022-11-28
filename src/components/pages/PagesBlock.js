@@ -4,7 +4,7 @@ import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 
 function PagesBlock(props) {
-   const {encrypt, preview, name, desc, github} = props;
+   const {encrypt, preview, name, desc/*, github*/} = props;
    const [prevMode, updatePreview] = useState(true)
    return (
 

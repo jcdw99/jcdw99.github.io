@@ -1,7 +1,7 @@
 import React from 'react';
 import {Box} from "@mui/material";
 import useWindowDimensions from "../WindowDim.js"
-import {info} from "../../info/Info";
+// import {info} from "../../info/Info";
 
 
 export default function About() {

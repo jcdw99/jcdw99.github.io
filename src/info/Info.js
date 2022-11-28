@@ -70,15 +70,15 @@ export const info = {
             tags: ['tag1', 'tag2']
         },
         {
-            name: "Narrative Action Research",
-            github: "https://github.com/jcdw99/NBAR_MERN",
-            image: proj3,
+            name: "Tea Grading Scorecard",
+            image: proj4,
             desc: '',
             tags: ['tag1', 'tag2']
         },
         {
-            name: "Tea Grading Scorecard",
-            image: proj4,
+            name: "Narrative Action Research",
+            github: "https://github.com/jcdw99/NBAR_MERN",
+            image: proj3,
             desc: '',
             tags: ['tag1', 'tag2']
         }

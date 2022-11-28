@@ -30,6 +30,8 @@
     "react-scripts": "^5.0.1",
     "react-swipeable-views": "^0.14.0",
     "react-tsparticles": "^2.5.3",
+    "react-type-animation": "^2.1.2",
+    "react-typed": "^1.2.0",
     "react-uuid": "^2.0.0",
     "sass": "^1.54.5",
     "tsparticles": "^2.5.3",
