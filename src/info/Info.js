@@ -17,18 +17,23 @@ export const info = {
     selfPortrait: self4,
     gradient: `-webkit-linear-gradient(110deg, ${colors})`, 
     baseColor: colors[0],
+    //I have to add 1 to the index field because /:0 is registered as empty
     miniBio: [ 
         {
             emoji: '✔',
-            text: 'Machine Learning'
+            text: 'Machine Learning',
+            pagesIndex:2
+
         },
         {
             emoji: '✔',
-            text: 'Artificial Intelligence'
+            text: 'Artificial Intelligence',
+            pagesIndex:1
         },
         {
             emoji: "✔",
-            text: "Computer Vision"
+            text: "Computer Vision",
+            pagesIndex:3
         },
         {
             emoji: "✔",

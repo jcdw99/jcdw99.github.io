@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, {useState} from 'react';
 import SwipeableViews from 'react-swipeable-views';
 import { useTheme } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
@@ -8,10 +8,11 @@ import {Box, Grid} from "@mui/material";
 import {info} from "../../info/Info";
 import PagesBlock from "./PagesBlock";
 import uuid from 'react-uuid';
+import { useParams} from 'react-router-dom'
+
 
 function TabPanel(props) {
-  const { children, value, index, ...other } = props;
-
+  const { children, value, index, topic, ...other } = props;
   return (
     <div
       role="tabpanel"
@@ -38,8 +39,8 @@ function a11yProps(index) {
 
 export default function FullWidthTabs() {
   const theme = useTheme();
-  const [value, setValue] = React.useState(0);
-
+  const {id} = useParams()
+  const [value, setValue] = useState([...Array(info.pages.length).keys()].map(x => String(x)).includes(id ? id : 0) ? parseInt(id) - 1 : 0)
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
