@@ -13,7 +13,7 @@ export default function Home() {
 
    const { height, width } = useWindowDimensions();
    const fontsize = Math.min(height, width) > 500 ? '40px':'30px'
-   
+
    return (
       <Box component={'main'} display={'flex'} flexDirection={{xs: 'column', md: 'column'}} alignItems={'center'} 
            justifyContent={'center'} minHeight={'calc(100vh - 175px)'}>
@@ -33,7 +33,7 @@ export default function Home() {
                {info.miniBio.map((bio, index) => (
                   
                    bio.pagesIndex ?
-                   <a href={`#/papers/${bio.pagesIndex}`}  key={uuid()}><EmojiBullet key={uuid()} emoji={bio.emoji} text={bio.text}/></a>
+                   <a href={`#/papers/${bio.pagesIndex}`} key={uuid()}><EmojiBullet key={uuid()} emoji={bio.emoji} text={bio.text}/></a>
                    :
                    <EmojiBullet key={uuid()} emoji={bio.emoji} text={bio.text}/>
                ))}
