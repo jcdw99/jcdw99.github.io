@@ -27,14 +27,14 @@ export default function Home() {
    
                {/* <h1>Hi, I'm <span style={{background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>{info.firstName}</span><span className={Style.hand}>🤚</span> </h1> */}
             <h2>{info.position}</h2>
-            <Box component={'ul'} p={'0.8rem'} width={'100%'}>
+            <Box component={'ul'} p={'0.8rem'} width={'100%'} >
                {info.miniBio.map((bio, index) => (
                   <EmojiBullet key={index} emoji={bio.emoji} text={bio.text}/>
                ))}
             </Box>
-            <Box display={'flex'} gap={'1.5rem'} justifyContent={'center'} fontSize={{xs: '2rem', md: '2.5rem'}}>
+            <Box display={'flex'} gap={'1.5rem'} justifyContent={'left'} fontSize={{xs: '2rem', md: '2.5rem'}}>
                {info.socials.map((social, index) => (
-                  <SocialIcon key={index} link={social.link} icon={social.icon} label={social.label} />
+                  <SocialIcon key={index} link={social.link} icon={social.icon} label={social.label} visible={true}/>
                ))}
             </Box>
          </Box>
