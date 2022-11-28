@@ -12,7 +12,8 @@ export default function ParticlesBackground() {
 
     const { height, width } = useWindowDimensions();
     const connection_dist = Math.max(height, width) > 500 ? 100: 180;
-    const speed = Math.max(height, width) < 500 ? .13: .11
+    const speed = Math.max(height, width) < 500 ? .13: .11;
+
     return (
         <Particles
             id="tsparticles"
@@ -63,7 +64,7 @@ export default function ParticlesBackground() {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 0.11,
+                        speed: speed,
                         straight: true,
                     },
                     number: {
