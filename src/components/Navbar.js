@@ -18,7 +18,6 @@ const links = [
     },
     {
         name: 'Papers',
-        type: 'papers',
         to: '/papers',
         active: 'papers'
     },
@@ -31,15 +30,15 @@ const links = [
 
 export default function Navbar({darkMode, handleClick}) {
     const location = useLocation()
-    const [active, setActive] = useState(location.pathname === '/' ? 'home' : location.pathname.slice(1, location.pathname.length));
-
+    const basePath = location.pathname.slice(1, location.pathname.length)
+    const [active, setActive] = useState(location.pathname === '/' ? 'home' : basePath.includes("papers") ? 'papers' : ' ');
     return (
         <Box component={'nav'} width={'100%'} paddingTop={'1rem'}>
             <Box component={'ul'} display={'flex'} justifyContent={'center'} alignItems={'center'}
                  gap={{xs: '2rem', md: '8rem'}}
                  textTransform={'lowercase'} fontSize={'1rem'}>
                 {links.map((link, index) => (
-                    <Box key={index} component={'li'} className={(link.active === active && !link.type) && Style.active}
+                    <Box key={index} component={'li'} className={(link.active === active) && Style.active}
                          sx={{borderImageSource: info.gradient}}>
                         <Link to={link.to} onClick={() => setActive(link.active)}>
                             {<h3 style={{paddingBottom: '0.5rem'}}>{link.name}</h3>}
