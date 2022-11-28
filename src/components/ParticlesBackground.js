@@ -12,6 +12,7 @@ export default function ParticlesBackground() {
 
     const { height, width } = useWindowDimensions();
     const connection_dist = Math.max(height, width) > 500 ? 100: 180;
+    const speed = Math.max(height, width) > 500 ? .11: .13
     return (
         <Particles
             id="tsparticles"
