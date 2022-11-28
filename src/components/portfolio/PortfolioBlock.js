@@ -8,11 +8,9 @@ function PortfolioBlock(props) {
       <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
          <Box justifyContent={'center'} alignItems={'center'} display={'flex'} gap={'1.5rem'} fontSize={{xs: '2rem', md: '2.5rem'}}>  
             <Typography sx={{ typography: { sm: 'h5', xs: 'h6' } }}> {name} </Typography> 
-            {github ?
-               <SocialIcon key={name} link={github} icon={"fa fa-github"} label={""} />
-               :
-               <SocialIcon key={name} icon={""} label={""} />
-            }
+
+               <SocialIcon key={name} link={github} icon={"fa fa-github"} label={""} visible={github}/>
+            
          </Box>
          <Box component={'img'} src={image} alt={'mockup'}  height={{xs: '80%', md: '70%'}} width={{xs: '80%', md: '70%'}} padding={"0 0 0 0"}/>
 

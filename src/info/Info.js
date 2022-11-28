@@ -1,6 +1,11 @@
 
 import self4 from "../img/self4.jpg"
 import proj1 from "../img/project_1.png"
+import proj2 from "../img/project_2.png"
+import proj3 from "../img/project_3.png"
+import proj4 from "../img/project_4.png"
+
+
 
 export let colors = ["rgb(0,100,100)", "rgb(255,255,255)"];
 
@@ -56,6 +61,26 @@ export const info = {
             image: proj1,
             desc: '',
             tags: ['tag1', 'tag2']
+        },
+        {
+            name: "Neural Network Library",
+            github: "https://github.com/jcdw99/ML_Assignment_2",
+            image: proj2,
+            desc: '',
+            tags: ['tag1', 'tag2']
+        },
+        {
+            name: "Narrative Action Research Tool",
+            github: "https://github.com/jcdw99/NBAR_MERN",
+            image: proj3,
+            desc: '',
+            tags: ['tag1', 'tag2']
+        },
+        {
+            name: "Tea Grading Scorecard",
+            image: proj4,
+            desc: '',
+            tags: ['tag1', 'tag2']
         }
     ],
 
@@ -63,7 +88,6 @@ export const info = {
         {
             field:"Artificial Intelligence",
             work:[
-                
                 {
                     name:"Nature Inspired Metaheuristics",
                     desc:"In this paper I've implemented three metaheuristics, as well as a novel adaptation of big-bang big-crunch optimization. It is shown that my adaption outperforms standard big-bang big-crunch, as well as particle swarm optimization against a host of benchmark functions. Differential evolution performed the best on the evaluation suite implemented in this paper. All algorithms are implemented in Java, according to their initial publication specifications.",
