@@ -60,7 +60,6 @@ export const info = {
     ],
 
     portfolio: [
-       
         {
             name: "Tea Grading Scorecard",
             image: proj4,
