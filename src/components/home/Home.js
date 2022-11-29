@@ -23,7 +23,7 @@ export default function Home() {
               borderRadius={'60%'} p={'0.25rem'} mb={{xs: '1rem', sm: 0}} mr={{xs: 0, md: '2rem'}}/>
                <Typography  marginTop={'1rem'} variant='h4' noWrap={true} alignContent={'left'} overflow={'visible'} fontWeight="bold" style={{fontSize:fontsize}}>
                   Hi, I'm&nbsp;
-                  <Typed  showCursor={false} strings={["Justin De Witt"]} typeSpeed={30} style={{fontWeight:'bold', background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}/>
+                  <Typed  showCursor={false} strings={["Justin De Witt"]} typeSpeed={20} style={{fontWeight:'bold', background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}/>
                </Typography>
          <Box>
    
