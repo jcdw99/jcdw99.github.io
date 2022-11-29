@@ -6,7 +6,7 @@ import useWindowDimensions from "../WindowDim"
 
 export default function Portfolio() {
     const { height, width } = useWindowDimensions();   
-    const gap = Math.min(height, width) > 500 ? '0': '1.5rem'
+    const gap = Math.min(height, width) > 500 ? '0': '3.5rem'
     return (
         <Box>
             <Grid container display={'flex'} justifyContent={'center'} padding={{xs:'1.5rem', md:'4rem'}} gap={gap}>

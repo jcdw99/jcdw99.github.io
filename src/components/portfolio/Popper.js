@@ -13,7 +13,7 @@ export default function PopperPopupState(props) {
         <PopupState variant="popper" popupId="demo-popup-popper">
         {(popupState) => (
             <Box textAlign='center'>
-            <Button variant='outlined' {...bindTrigger(popupState)} style={{color:'#ffffff'}}>
+            <Button variant='outlined' {...bindTrigger(popupState)} style={{color:'#ffffff', width:'100%'}}>
                 {text}
             </Button>
             <Popover
