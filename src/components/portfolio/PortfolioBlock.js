@@ -15,7 +15,7 @@ function PortfolioBlock(props) {
                <SocialIcon key={name} link={github} icon={"fa fa-github"} label={""} visible={github}/>
             
          </Box>
-         <Box component={'img'} src={image} alt={'mockup'}  height={{xs: '80%', md: '70%'}} width={{xs: '80%', md: '70%'}} padding={"0 0 0 0"}/>
+         <Box component={'img'} src={image} alt={'mockup'}  height={{xs: '90%', s:'80%', md: '70%'}} width={{xs: '90%', s:'80%', md: '70%'}} padding={"0 0 0 0"}/>
 
          <Grid container  height={{xs: '50%', md: '40%'}} width={{xs: '80%', md: '70%'}}>
             {/* This should be the description box */}
