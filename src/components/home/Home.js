@@ -36,11 +36,11 @@ export default function Home() {
                    <EmojiBullet key={uuid()} emoji={bio.emoji} text={bio.text}/>
                ))}
             </Box>
-            <Box display={'flex'} gap={'1.5rem'} justifyContent={'left'} fontSize={{xs: '2rem', md: '2.5rem'}}  marginLeft={'5%'}>
+            {/* <Box display={'flex'} gap={'1.5rem'} justifyContent={'left'} fontSize={{xs: '2rem', md: '2.5rem'}}  marginLeft={'5%'}>
                {info.socials.map((social, index) => (
                   <SocialIcon key={index} link={social.link} icon={social.icon} label={social.label} visible={true}/>
                ))}
-            </Box>
+            </Box> */}
          </Box>
       </Box>
    )
