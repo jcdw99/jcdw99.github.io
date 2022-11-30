@@ -4,11 +4,11 @@ import Navbar from "./Navbar";
 import Home from "./home/Home";
 import About from "./about/About";
 import Pages from './pages/Pages';
+import Contact from './contact/Contact'
 import Portfolio from "./portfolio/Portfolio";
 import {Route, Routes } from "react-router-dom";
 import {Box, Grid} from "@mui/material";
 import ParticlesBackground from './ParticlesBackground';
-
 export default function BaseLayout() {
    // default darkmode / lightmode state
    let [darkMode, setDarkMode] = useState(true);
@@ -33,6 +33,7 @@ export default function BaseLayout() {
                   <Route exact path={'/papers'} element={<Pages/>}/>
                   <Route exact path={'/papers/:id'} element={<Pages/>}/>
                   <Route exact path={'/papers/'} element={<Pages/>}/>
+                  <Route exact path={'/contact/'} element={<Contact/>}/>
                </Routes>
             </Grid>
             <Grid item>
