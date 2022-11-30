@@ -2,7 +2,6 @@ import React from 'react';
 import Style from './Home.module.scss';
 import classNames from 'classnames';
 import EmojiBullet from "./EmojiBullet";
-import SocialIcon from "./SocialIcon";
 import {Box, Typography} from "@mui/material";
 import {info} from "../../info/Info";
 import Typed from 'react-typed';

@@ -1,6 +1,6 @@
 import React from 'react';
 import {Box, Grid, Typography, Paper} from "@mui/material";
-import SocialIcon from '../home/SocialIcon';
+import SocialIcon from '../footer/SocialIcon';
 import Popper from './Popper.js'
 import useWindowDimensions from "../WindowDim"
 
