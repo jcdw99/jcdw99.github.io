@@ -3,6 +3,7 @@ import {Grid, Box, Typography} from "@mui/material";
 import {info} from "../../info/Info";
 import SocialIcon from "../home/SocialIcon";
 import useWindowDimensions from "../WindowDim"
+import logo from "../../img/logo.png"
 
 const Footer = () => {
     const { height, width } = useWindowDimensions();
@@ -10,10 +11,13 @@ const Footer = () => {
     return (
         <Grid container justify="center" spacing={2} style={{backgroundColor:'#2f2f2f'}}>
             <Grid item  xs={showEmail ? 4 : 6}>
-                <Box xs={12} textAlign={'center'} >
-                    <Typography variant="h6" fontWeight={'bold'} marginTop={'2%'}>
-                        <a href={'#/contact'}> Contact Me</a>
-                    </Typography>
+                <Box xs={12} textAlign={'center'}>
+                    <Box display={'flex'} gap={'1rem'} justifyContent={'center'} marginTop={'2%'}> 
+                        <img src={logo} alt={'logo'} style={{width:'30px', height:'30px'}}/> 
+                        <Typography variant="h6" fontWeight={'bold'} marginTop={'1%'}>
+                            <a href={'#/contact'}> Contact Me </a>
+                        </Typography>
+                    </Box>
                 </Box>
             </Grid>
             {
