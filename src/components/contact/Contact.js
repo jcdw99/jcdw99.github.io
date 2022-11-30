@@ -43,7 +43,7 @@ const handleOnSubmit = (e) => {
     <Box style={{backgroundColor:'#f2f2f2'}} marginLeft={margin} marginRight={margin} >
       <Grid container  justifyContent={'center'} padding={{xs:'2rem', md:'3rem'}} marginTop={'3rem'}>
         <Form onSubmit={handleOnSubmit} style={{width:'80%'}}>
-        <Box justifyContent={'center'} textAlign={'center'} style={{marginBottom:'2rem'}}>
+        <Box justifyContent={'center'} textAlign={'center'} style={{marginBottom:'3rem'}}>
           <Typography variant='h4' fontWeight={'bold'} style={{color:'black'}}> Contact Me </Typography>
         </Box>
           <Form.Field
