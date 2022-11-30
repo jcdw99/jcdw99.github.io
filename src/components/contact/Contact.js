@@ -1,7 +1,7 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 import { Form, Input, TextArea, Button } from 'semantic-ui-react';
-import {Box, Grid} from "@mui/material";
+import {Box, Grid, Typography} from "@mui/material";
 import useWindowDimensions from "../WindowDim"
 import Swal from 'sweetalert2';
 
@@ -19,12 +19,13 @@ const Contact = () => {
 
 const handleOnSubmit = (e) => {
     e.preventDefault();
+    console.log(e.target)
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
         .then((result) => {
         console.log(result.text);
         Swal.fire({
           icon: 'success',
-          title: 'Message Sent Successfully'
+          title: 'Email Sent Successfully'
         })
         }, (error) => {
         console.log(error.text);
@@ -35,12 +36,16 @@ const handleOnSubmit = (e) => {
         })
         });
     e.target.reset()
+    
     };
     
   return (
     <Box style={{backgroundColor:'#f2f2f2'}} marginLeft={margin} marginRight={margin} >
       <Grid container  justifyContent={'center'} padding={{xs:'2rem', md:'3rem'}} marginTop={'3rem'}>
         <Form onSubmit={handleOnSubmit} style={{width:'80%'}}>
+        <Box justifyContent={'center'} textAlign={'center'}>
+          <Typography variant='h4' fontWeight={'bold'} style={{color:'black'}}> Contact Me </Typography>
+        </Box>
           <Form.Field
             id='form-input-control-email'
             control={Input}

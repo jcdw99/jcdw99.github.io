@@ -9,6 +9,8 @@ import Portfolio from "./portfolio/Portfolio";
 import {Route, Routes } from "react-router-dom";
 import {Box, Grid} from "@mui/material";
 import ParticlesBackground from './ParticlesBackground';
+import Footer from './footer/Footer'
+
 export default function BaseLayout() {
    // default darkmode / lightmode state
    let [darkMode, setDarkMode] = useState(true);
@@ -39,6 +41,7 @@ export default function BaseLayout() {
             <Grid item>
                <Box component={'footer'} display={'flex'} flexDirection={'column'} alignItems={'center'}
                     py={'1.5rem'} sx={{opacity: 0.7}} width={'100%'}>
+                  <Footer />
                </Box>
             </Grid>
          </Grid>

@@ -27,11 +27,9 @@ export default function Home() {
                </Typography>
          <Box>
    
-               {/* <h1>Hi, I'm <span style={{background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>{info.firstName}</span><span className={Style.hand}>🤚</span> </h1> */}
             <h2>{info.position}</h2>
             <Box component={'ul'} p={'0.8rem'} width={'100%'} marginLeft={'3%'}>
                {info.miniBio.map((bio, index) => (
-                  
                    bio.pagesIndex ?
                    <a href={`#/papers/${bio.pagesIndex}`} key={uuid()}><EmojiBullet key={uuid()} emoji={bio.emoji} text={bio.text}/></a>
                    :
