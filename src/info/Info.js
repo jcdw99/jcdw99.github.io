@@ -4,6 +4,7 @@ import proj1 from "../img/project_1.png"
 import proj2 from "../img/project_2.png"
 import proj3 from "../img/project_3.png"
 import proj4 from "../img/project_4.png"
+import picOfMe from "../img/about_small.JPG"
 
 
 
@@ -17,6 +18,17 @@ export const info = {
     selfPortrait: self4,
     gradient: `-webkit-linear-gradient(110deg, ${colors})`, 
     baseColor: colors[0],
+    About: {
+        aboutMePortrait: picOfMe,
+        title: "Passionate About My Work",
+        desc: [
+            'My university days were a time of self discovery. After moving alone from the United States to South Africa in the pursuit of further education, I suddenly had no friends - no understanding of local culture, and absolute freedom.',
+            "It wasn't easy at the start. I decided to pursue a Computer Science degree without any prior coding experience. Over the years, my interest in solving riddle-styled algorithmic problems evolved into something deeper. My work began to feel like something that I wanted to make a career out of. ",
+            "During my final year at university I began to discover work that I am truly passionate about. There is something amazingly rewarding about understanding, implementing and improving intelligent computing systems.  A career goal of mine is to work alongside a team of dedicated individuals, collectively pushing the boundaries of what state-of-art models can achieve."
+        ]
+
+
+    },
     //I have to add 1 to the index field because /:0 is registered as empty
     miniBio: [ 
         {
@@ -77,7 +89,7 @@ export const info = {
             name: "MoonBoard Grader",
             github: "https://github.com/jcdw99/MoonBoard-Classifier",
             image: proj1,
-            desc: 'The MoonBoard is an standardized indoor rock climbing wall. Members of the international climbing community can use the MoonBoard application to create, or climb, graded routes. This project delivers a homogenous ensemble model that quite accurately predicts the difficulty (grade) of MoonBoard problems. Included in this project is a script used to autmatically interact with the MoonBoard application to collect route images. The images are subsequently piped into a morphological processing pipeline to identify which holds form part of the route. Thereafter, the data is used to construct a machine learning model to perform the classification.',
+            desc: 'The MoonBoard is an standardized indoor rock climbing wall. Members of the international climbing community can use the MoonBoard application to create, or climb, graded routes. This project delivers a homogenous ensemble model that quite accurately predicts the difficulty (grade) of MoonBoard problems. Included in this project is a script used to automatically interact with the MoonBoard application to collect route images. The images are subsequently piped into a morphological processing pipeline to identify which holds form part of the route. Thereafter, the data is used to construct a machine learning model to perform the classification.',
             tags: ['tag1', 'tag2']
         },
         {
