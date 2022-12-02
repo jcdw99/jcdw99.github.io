@@ -5,7 +5,8 @@ import proj2 from "../img/project_2.png"
 import proj3 from "../img/project_3.png"
 import proj4 from "../img/project_4.png"
 import picOfMe from "../img/about_small.JPG"
-
+import cv from "../files/JustinDewitt-WebResume.pdf"
+import bcom from "../files/JustinDewitt-Bcom.pdf"
 
 
 export let colors = ["rgb(0,100,100)", "rgb(255,255,255)"];
@@ -25,8 +26,26 @@ export const info = {
             'My university days were a time of self discovery. After moving alone from the United States to South Africa in the pursuit of further education, I suddenly had no friends - no understanding of local culture, and absolute freedom.',
             "It wasn't easy at the start. I decided to pursue a Computer Science degree without any prior coding experience. Over the years, my interest in solving riddle-styled algorithmic problems evolved into something deeper. My work began to feel like something that I wanted to make a career out of. ",
             "During my final year at university I began to discover work that I am truly passionate about. There is something amazingly rewarding about understanding, implementing and improving intelligent computing systems.  A career goal of mine is to work alongside a team of dedicated individuals, collectively pushing the boundaries of what state-of-art models can achieve."
-        ]
+        ],
+        downloadLinks: [
+            {
+                title: "Resumé",
+                file_path: cv,
+                file_name: "JustinDewitt-WebResume"
 
+            }, 
+            {
+                title: "Bsc Hons CS",
+                file_path: '',
+                file_name: 'JustinDewitt-Bsc'
+
+            },
+            {
+                title: "Bcom Math Sci",
+                file_path: bcom,
+                file_name: "JustinDewitt-Bcom"
+            }
+        ]
 
     },
     //I have to add 1 to the index field because /:0 is registered as empty
