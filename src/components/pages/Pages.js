@@ -21,8 +21,6 @@ function TabPanel(props) {
       aria-labelledby={`full-width-tab-${index}`}
       {...other}
     >
-      {/* Cache Large (2mb) about me image */}
-      <img src={info.About.aboutMePortrait} style={{display:'none'}} alt=""/>
       {value === index && (
         <Box sx={{ p: 3 }}>
           {children}
