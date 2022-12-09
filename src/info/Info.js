@@ -7,6 +7,7 @@ import proj4 from "../img/project_4.png"
 import picOfMe from "../img/about_small.JPG"
 import cv from "../files/JustinDewitt-WebResume.pdf"
 import bcom from "../files/JustinDewitt-Bcom.pdf"
+import bsc from "../files/JustinDewitt-Bsc.pdf"
 
 
 export let colors = ["rgb(0,100,100)", "rgb(255,255,255)"];
@@ -36,7 +37,7 @@ export const info = {
             }, 
             {
                 title: "Bsc Hons CS",
-                file_path: '',
+                file_path: bsc,
                 file_name: 'JustinDewitt-Bsc'
 
             },
