@@ -14,9 +14,11 @@ export default function Home() {
    const fontsize = Math.min(height, width) > 500 ? '40px':'30px'
 
    return (
+      
       <Box component={'main'} display={'flex'} flexDirection={{xs: 'column', md: 'column'}} alignItems={'center'} 
            justifyContent={'center'} minHeight={'calc(100vh - 175px)'}>
-         
+         {/* Cache Large (2mb) about me image */}
+         <img src={info.About.aboutMePortrait} style={{display:'none'}}  alt=""/>
          <Box className={classNames(Style.avatar, Style.shadowed)} alt={'image of developer'} style={{background: info.gradient}} component={'img'} src={info.selfPortrait} width={{xs: '35vh', md: '40vh'}}
               height={{xs: '35vh', md: '40vh'}} marginTop={'2rem'}
               borderRadius={'60%'} p={'0.25rem'} mb={{xs: '1rem', sm: 0}} mr={{xs: 0, md: '2rem'}}/>
