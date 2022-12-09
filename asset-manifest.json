@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.cff7a290.css",
-    "main.js": "/static/js/main.74eda65e.js",
+    "main.js": "/static/js/main.417a61d2.js",
     "static/media/about_small.JPG": "/static/media/about_small.104291e8a5b5d9693a7c.JPG",
     "static/media/self4.jpg": "/static/media/self4.b71f96e3ac05e8896ddf.jpg",
     "static/media/brand-icons.svg": "/static/media/brand-icons.6729d29753e000c17489.svg",
     "static/media/project_2.png": "/static/media/project_2.5e8a53a3ef3e4c7fd924.png",
     "static/media/JustinDewitt-Bcom.pdf": "/static/media/JustinDewitt-Bcom.53e8c269d82c2a07374d.pdf",
+    "static/media/JustinDewitt-Bsc.pdf": "/static/media/JustinDewitt-Bsc.9c156948a24e5d3fb6d5.pdf",
     "static/media/icons.svg": "/static/media/icons.62d9dae4e0040e81c980.svg",
     "static/media/project_4.png": "/static/media/project_4.13ceab2e2bbf57231db1.png",
     "static/media/project_1.png": "/static/media/project_1.d3729c2417fc820f960c.png",
@@ -28,10 +29,10 @@
     "static/media/outline-icons.woff2": "/static/media/outline-icons.687a4990ea22bb1a49d4.woff2",
     "index.html": "/index.html",
     "main.cff7a290.css.map": "/static/css/main.cff7a290.css.map",
-    "main.74eda65e.js.map": "/static/js/main.74eda65e.js.map"
+    "main.417a61d2.js.map": "/static/js/main.417a61d2.js.map"
   },
   "entrypoints": [
     "static/css/main.cff7a290.css",
-    "static/js/main.74eda65e.js"
+    "static/js/main.417a61d2.js"
   ]
 }
