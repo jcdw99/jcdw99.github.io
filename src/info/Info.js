@@ -14,7 +14,7 @@ export let colors = ["rgb(0,100,100)", "rgb(255,255,255)"];
 
 export const info = {
     firstName: "Justin",
-    lastName: "DeWitt",
+    lastName: "Dewitt",
     initials: "JCD", // the example uses first and last, but feel free to use three or more if you like.
     position: "And I'm Interested In",
     selfPortrait: self4,
