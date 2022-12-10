@@ -12,7 +12,6 @@ export default function Home() {
 
    const { height, width } = useWindowDimensions();
    const fontsize = Math.min(height, width) > 500 ? '40px':'30px'
-
    return (
       
       <Box component={'main'} display={'flex'} flexDirection={{xs: 'column', md: 'column'}} alignItems={'center'} 
@@ -35,11 +34,6 @@ export default function Home() {
                    <EmojiBullet key={uuid()} emoji={bio.emoji} text={bio.text}/>
                ))}
             </Box>
-            {/* <Box display={'flex'} gap={'1.5rem'} justifyContent={'left'} fontSize={{xs: '2rem', md: '2.5rem'}}  marginLeft={'5%'}>
-               {info.socials.map((social, index) => (
-                  <SocialIcon key={index} link={social.link} icon={social.icon} label={social.label} visible={true}/>
-               ))}
-            </Box> */}
          </Box>
       </Box>
    )
