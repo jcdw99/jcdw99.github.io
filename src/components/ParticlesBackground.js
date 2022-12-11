@@ -26,7 +26,7 @@ export default function ParticlesBackground() {
                   },
                 background: {
                     color: {
-                        value: "#1f1f1f",
+                        value: "#111111",
                     },
                 },
                 fpsLimit: 120,
@@ -51,7 +51,7 @@ export default function ParticlesBackground() {
                         color: "#ffffff",
                         distance: connection_dist,
                         enable: true,
-                        opacity: 0.15,
+                        opacity: 0.25,
                         width: 1,
                     },
                     collisions: {
@@ -73,9 +73,10 @@ export default function ParticlesBackground() {
                             area: width,
                         },
                         value: Math.round(Math.max(width, height)/7),
+                        // value:10000,
                     },
                     opacity: {
-                        value: 0.15,
+                        value: 0.25,
                     },
                     shape: {
                         type: "circle",

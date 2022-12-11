@@ -29,7 +29,7 @@ function PagesBlock(props) {
          <Grid container margin={{xs:"0 0 5vh 0"}} height={{xs: 'auto', md: '25vh'}} width={{xs: '100%', md: '90%'}}>
             {/* This should be the description box */}
             <Grid item xs={12}  s={12} md={12} marginTop={'1vh'}>
-                 <Paper style={{backgroundColor:'#1f1f1f'}} variant='outline' elevation={10}>  
+                 <Paper style={{backgroundColor:'#111111'}} variant='outline' elevation={10}>  
                      <Typography variant='p' style={{fontSize:'.7rem'}}> {desc} </Typography> 
                  </Paper>            
             </Grid>
