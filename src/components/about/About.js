@@ -1,7 +1,7 @@
 import React from 'react';
 import {Box, Grid, Typography} from "@mui/material";
 import useWindowDimensions from "../WindowDim.js"
-import {info} from "../../info/Info";
+import {info, theme} from "../../info/Info";
 import DownloadButton from "./DownloadButton"
 
 export default function About() {
@@ -11,7 +11,7 @@ export default function About() {
     const textSize = Math.min(height, width) > 500  ? '14pt': '9pt'
 
     return (
-        <Box>
+        <Box style={{color:theme.textColor}}>
             <Box 
                 component={'main'} 
                 display={'flex'}
@@ -52,6 +52,7 @@ export default function About() {
                             return (
                                 <Grid item key={index}>
                                     <Typography
+                                        backgroundColor={theme.backgroundColor}
                                         fontWeight={'bold'}
                                         fontSize={textSize}
                                         variant={'p'}>

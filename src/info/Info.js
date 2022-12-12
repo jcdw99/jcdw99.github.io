@@ -10,8 +10,16 @@ import bcom from "../files/JustinDewitt-Bcom.pdf"
 import bsc from "../files/JustinDewitt-Bsc.pdf"
 
 
-export let colors = ["rgb(0,100,100)", "rgb(255,255,255)"];
-
+export let colors = ["rgb(173,216,230)", "rgb(143,186,200)"];
+export let theme = {
+    backgroundColor: '#FFFFFF',
+    textColor: '#000000',
+    navColor: '#1f1f1f',
+    navOpacity: 0.8,
+    activeButton:'#1f1f1f',
+    inactiveButton:'#3f3f3f',
+    form:'#e5e5e5'
+};
 export const info = {
     firstName: "Justin",
     lastName: "Dewitt",

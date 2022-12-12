@@ -1,11 +1,10 @@
 import React, {useState} from 'react';
 import SwipeableViews from 'react-swipeable-views';
-import { useTheme } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import {Box, Grid} from "@mui/material";
-import {info} from "../../info/Info";
+import {info, theme} from "../../info/Info";
 import PagesBlock from "./PagesBlock";
 import uuid from 'react-uuid';
 import { useParams} from 'react-router-dom'
@@ -38,7 +37,6 @@ function a11yProps(index) {
 }
 
 export default function FullWidthTabs() {
-  const theme = useTheme();
   const {id} = useParams()
   const [value, setValue] = useState([...Array(info.pages.length).keys()].map(x => String(x)).includes(id ? id : 0) ? parseInt(id) - 1 : 0)
   const handleChange = (event, newValue) => {
@@ -51,7 +49,7 @@ export default function FullWidthTabs() {
 
   return (
     <Box width='100%'>
-      <AppBar position="absolute" style={{marginTop:'4.3rem'}}>
+      <AppBar position="absolute" style={{marginTop:'4.3rem' }}>
       <Tabs
         value={value}
         onChange={handleChange}
@@ -59,7 +57,7 @@ export default function FullWidthTabs() {
         variant="fullWidth"
         textColor='inherit'
         centered
-        style={{background: "linear-gradient(45deg, grey, blueGrey)"}}
+        style={{backgroundColor: theme.navColor, opacity:theme.navOpacity + 0.1}}
       >
         {info.pages.map((page, index) => (
                      <Tab key={index}  label={page.field} {...a11yProps(index)} wrapped={true}/>

@@ -2,15 +2,16 @@ import React from 'react';
 import {Box, Grid, Typography, Paper} from "@mui/material";
 import SocialIcon from '../footer/SocialIcon';
 import Popper from './Popper.js'
+import {theme} from "../../info/Info";
 import useWindowDimensions from "../WindowDim"
 
 function PortfolioBlock(props) {
    const {name, desc, github, image} = props;
    const { height, width } = useWindowDimensions();   
    return (
-      <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
+      <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'} color={theme.textColor}>
          <Box justifyContent={'center'} alignItems={'center'} display={'flex'} gap={'1.5rem'} fontSize={{xs: '2rem', md: '2.5rem'}}>  
-            <Typography sx={{ typography: { sm: 'h4', xs: 'h6' }, fontWeight:'bold'}} > {name} </Typography> 
+            <Typography sx={{ typography: { sm: 'h4', xs: 'h6' }, fontWeight:'bold'}}> {name} </Typography> 
 
                <SocialIcon key={name} link={github} icon={"fa fa-github"} label={""} visible={github}/>
             
@@ -22,11 +23,14 @@ function PortfolioBlock(props) {
             <Grid item xs={12}  s={12} md={12} marginTop={'1vh'}>
 
                  { Math.min(height, width) > 550 ?
-                     <Paper style={{backgroundColor:'#111111'}} variant='outline' elevation={10}>  
-                        <Typography variant='p' style={{fontSize:'.7rem'}}> {desc} </Typography> 
+                     <Paper style={{backgroundColor:theme.backgroundColor, color:theme.textColor, marginTop:'1rem'}} variant='outline' elevation={10}>  
+                        <Typography variant='p' style={{fontSize: Math.min(width, height) > 500 ? '1rem' : '0.7rem'}}> {desc} </Typography> 
                      </Paper>  
                      :
-                     <Popper text={'See Description'} desc={desc}/>
+                     <Popper 
+                        text={'See Description'}
+                        desc={desc}
+                     />
                   }
                        
             </Grid>

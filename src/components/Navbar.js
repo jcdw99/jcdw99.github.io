@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Style from './Navbar.module.scss';
 import {Link, useLocation} from "react-router-dom";
 import {Box} from "@mui/material";
-import {info} from "../info/Info";
+import {info, theme} from "../info/Info";
 
 const links = [
     {
@@ -31,8 +31,9 @@ export default function Navbar() {
     const location = useLocation()
     const basePath = location.pathname.slice(1, location.pathname.length)
     const [active, setActive] = useState(location.pathname === '/' ? 'home' : basePath.includes("papers") ? 'papers' : ' ');
+    
     return (
-        <Box component={'nav'} width={'100%'} paddingTop={'1rem'}>
+        <Box component={'nav'} style={{backgroundColor: theme.navColor, opacity:theme.navOpacity}} width={'100%'} paddingTop={'1rem'} paddingBottom={'1rem'}>
             <Box component={'ul'} display={'flex'} justifyContent={'center'} alignItems={'center'}
                  gap={{xs: '2rem', md: '8rem'}}
                  textTransform={'lowercase'} fontSize={'1rem'}>

@@ -3,6 +3,7 @@ import emailjs from 'emailjs-com';
 import { Form, Input, TextArea, Button } from 'semantic-ui-react';
 import {Box, Grid, Typography} from "@mui/material";
 import useWindowDimensions from "../WindowDim"
+import {theme} from '../../info/Info.js'
 import Swal from 'sweetalert2';
 
 
@@ -40,7 +41,7 @@ const handleOnSubmit = (e) => {
     };
     
   return (
-    <Box style={{backgroundColor:'#f2f2f2', borderRadius:'1rem'}} marginLeft={margin} marginRight={margin} >
+    <Box style={{backgroundColor:theme.form, borderRadius:'1rem'}} marginLeft={margin} marginRight={margin} >
       <Grid container  justifyContent={'center'} padding={{xs:'2rem', md:'3rem'}} marginTop={'3rem'}>
         <Form onSubmit={handleOnSubmit} style={{width:Math.min(height, width) > 500 ? '80%' : '100%'}}>
         <Box justifyContent={'center'} textAlign={'center'} style={{marginBottom:'3rem'}}>
@@ -49,7 +50,6 @@ const handleOnSubmit = (e) => {
           <Form.Field
             id='form-input-control-email'
             control={Input}
-            color='#ffffff'
             label='Email'
             name='reply_to'
             placeholder='Email…'

@@ -3,7 +3,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Popover from '@mui/material/Popover';
 import PopupState, { bindTrigger, bindPopover } from 'material-ui-popup-state';
-
+import {theme} from "../../info/Info";
 import Box from "@mui/material/Box";
 
 export default function PopperPopupState(props) {
@@ -13,7 +13,8 @@ export default function PopperPopupState(props) {
         <PopupState variant="popper" popupId="demo-popup-popper">
         {(popupState) => (
             <Box textAlign='center'>
-            <Button variant='outlined' {...bindTrigger(popupState)} style={{color:'#ffffff', width:'100%'}}>
+            <Button variant='outlined' {...bindTrigger(popupState)} 
+              style={{ opacity:theme.navOpacity, backgroundColor:theme.inactiveButton, width:'100%', color:theme.backgroundColor}}>
                 {text}
             </Button>
             <Popover

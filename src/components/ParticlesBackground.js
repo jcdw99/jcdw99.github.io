@@ -2,8 +2,7 @@ import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import useWindowDimensions from "./WindowDim"
-
-
+import {theme} from '../info/Info.js'
 
 export default function ParticlesBackground() {
     const particlesInit = useCallback(async engine => {
@@ -26,7 +25,7 @@ export default function ParticlesBackground() {
                   },
                 background: {
                     color: {
-                        value: "#111111",
+                        value: theme.backgroundColor,
                     },
                 },
                 fpsLimit: 120,
@@ -45,10 +44,10 @@ export default function ParticlesBackground() {
                 },
                 particles: {
                     color: {
-                        value: "#ffffff",
+                        value: theme.textColor,
                     },
                     links: {
-                        color: "#ffffff",
+                        color: theme.textColor,
                         distance: connection_dist,
                         enable: true,
                         opacity: 0.25,
