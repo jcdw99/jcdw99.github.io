@@ -21,22 +21,24 @@ function PagesBlock(props) {
                   value={prevMode}
                   exclusive
                   onChange={() => updatePreview(!prevMode)}
-                  style={{opacity:theme.navOpacity}}
+                  // style={{opacity:1}}
                   aria-label="Platform"
                >
                   <ToggleButton value={true} 
-                     style={{
-                        backgroundColor: prevMode ? theme.activeButton: theme.inactiveButton, 
-                        color:theme.backgroundColor
-                     }}>
+                     // style={{
+                     //    backgroundColor: prevMode ? theme.activeButton: theme.inactiveButton, 
+                     //    color:theme.backgroundColor
+                     // }}>
+                  >
                         Preview
                   </ToggleButton>
                   
                   <ToggleButton value={false} 
-                     style={{
-                        backgroundColor: !prevMode ? theme.activeButton: theme.inactiveButton, 
-                        color:theme.backgroundColor
-                     }}>
+                     // style={{
+                     //    backgroundColor: !prevMode ? theme.activeButton: theme.inactiveButton, 
+                     //    color:theme.backgroundColor
+                     // }}>
+                  >
                         Full Paper
                   </ToggleButton>
 

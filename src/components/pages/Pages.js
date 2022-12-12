@@ -57,7 +57,7 @@ export default function FullWidthTabs() {
         variant="fullWidth"
         textColor='inherit'
         centered
-        style={{backgroundColor: theme.navColor, opacity:theme.navOpacity + 0.1}}
+        style={{backgroundColor: theme.pageNav, opacity:theme.navOpacity + 0.1, color:'white'}}
       >
         {info.pages.map((page, index) => (
                      <Tab key={index}  label={page.field} {...a11yProps(index)} wrapped={true}/>
