@@ -57,10 +57,14 @@ export default function FullWidthTabs() {
         variant="fullWidth"
         textColor='inherit'
         centered
-        style={{backgroundColor: theme.pageNav, opacity:theme.navOpacity + 0.1, color:'white'}}
+        style={{backgroundColor: '#7caaf2', opacity:theme.navOpacity , color:'#ffffff'}}
       >
         {info.pages.map((page, index) => (
-                     <Tab key={index}  label={page.field} {...a11yProps(index)} wrapped={true}/>
+                      index !== value ?
+                        <Tab key={index}  label={page.field} style={{opacity:0.9, fontSize:'0.8rem' }} {...a11yProps(index)} wrapped={true}/>
+                         :
+                        <Tab key={index}  label={page.field} style={{backgroundColor:'#5a80c2', fontWeight:'bold', opacity:1, fontSize:'0.85rem' }} {...a11yProps(index)} wrapped={true}/> 
+
                 ))}
       </Tabs>
       </AppBar>
