@@ -18,7 +18,7 @@ function PortfolioBlock(props) {
          </Box>
          <Box component={'img'} src={image} alt={'mockup'}  height={{xs: '90%', s:'80%', md: '70%'}} width={{xs: '90%', s:'80%', md: '70%'}} padding={"0 0 0 0"}/>
 
-         <Grid container  height={{xs: '50%', s: '50%', md: '20rem'}} width={{xs: '80%', s: '80%', md: '70%'}}>
+         <Grid container  height={{xs: '50%', s: '50%', md: '27.5rem'}} width={{xs: '80%', s: '80%', md: '70%'}}>
             {/* This should be the description box */}
             <Grid item xs={12}  s={12} md={12} marginTop={'1vh'}>
 
