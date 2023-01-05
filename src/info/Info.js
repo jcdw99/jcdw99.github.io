@@ -287,10 +287,10 @@ export const info = {
                 },
                 {
                     name:"Color Models and Processing",
-                    desc:"Humans posess trichromatic vision, we have receptors that are sensitive to red, green and blue light. A wide range of colors can be represented by combining differing magnitudes of each color channel. In this paper we show this result, and explore methods of converting between popular color channels including RGB, CMYK, and HSV. Thereafter notion of a \"color gambut\" is explained using examples of coordinate combination decomposition.",
+                    desc:"Humans posess trichromatic vision, we have receptors that are sensitive to red, green and blue light. A wide range of colors can be represented by combining differing magnitudes of each color channel. In this paper we show this result, and explore methods of converting between popular color channels including RGB, CMYK, and HSV. Thereafter notion of a \"color gamut\" is explained using examples of coordinate combination decomposition.",
                     encrypt:"https://drive.google.com/file/d/1syQPgQEHBiQjb-OyT1WHNvMFNR9P0-l-/preview",
                     preview:"https://drive.google.com/file/d/1fASMzp3-2uGCZZ9GdMUWHKUcsd1twh2w/preview",
-                    tags: ["Color Models", "Chromaticity Diagram", "Chromaticity Decomposition", "Colour Gambut"]
+                    tags: ["Color Models", "Chromaticity Diagram", "Chromaticity Decomposition", "Colour Gamut"]
 
                 }
             ]
