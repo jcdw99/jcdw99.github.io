@@ -8,7 +8,7 @@ import {info, theme} from "../../info/Info";
 import PagesBlock from "./PagesBlock";
 import uuid from 'react-uuid';
 import { useParams} from 'react-router-dom'
-
+import useWindowDimensions from "../WindowDim"
 
 function TabPanel(props) {
   const { children, value, index, topic, ...other } = props;
@@ -37,7 +37,10 @@ function a11yProps(index) {
 }
 
 export default function FullWidthTabs() {
+
+  const { height, width } = useWindowDimensions();
   const {id} = useParams()
+  const navFontSize = Math.min(width, height) > 500 ? '1.2rem': '0.8rem';
   const [value, setValue] = useState([...Array(info.pages.length).keys()].map(x => String(x)).includes(id ? id : 0) ? parseInt(id) - 1 : 0)
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -49,7 +52,7 @@ export default function FullWidthTabs() {
 
   return (
     <Box width='100%'>
-      <AppBar position="absolute" style={{marginTop:'4.3rem' }}>
+      <AppBar position="absolute" style={{marginTop: Math.min(width, height) > 500 ? '5.2rem': '4.5rem'}}>
       <Tabs
         value={value}
         onChange={handleChange}
@@ -61,9 +64,9 @@ export default function FullWidthTabs() {
       >
         {info.pages.map((page, index) => (
                       index !== value ?
-                        <Tab key={index}  label={page.field} style={{opacity:0.9, fontSize:'0.8rem' }} {...a11yProps(index)} wrapped={true}/>
+                        <Tab key={index}  label={page.field} style={{opacity:0.9, fontSize: navFontSize}} {...a11yProps(index)} wrapped={true}/>
                          :
-                        <Tab key={index}  label={page.field} style={{backgroundColor:'#5a80c2', fontWeight:'bold', opacity:1, fontSize:'0.85rem' }} {...a11yProps(index)} wrapped={true}/> 
+                        <Tab key={index}  label={page.field} style={{backgroundColor:'#5a80c2', fontWeight:'bold', opacity:1, fontSize:navFontSize }} {...a11yProps(index)} wrapped={true}/> 
 
                 ))}
       </Tabs>
@@ -82,7 +85,7 @@ export default function FullWidthTabs() {
                   {field.work.map((page, pageDex) => (
                       
                       <Grid item xs={12} md={6} key={uuid()}>
-                          <PagesBlock encrypt={page.encrypt} preview={page.preview} name={page.name} desc={page.desc} tags={page.tags} github={page.github} />
+                          <PagesBlock encrypt={page.encrypt} preview={page.preview} name={page.name} desc={page.desc} tags={page.tags} github={page.github} width={width} height={height} />
                       </Grid>
                                         
                   ))}

@@ -3,12 +3,10 @@ import {Box, Grid, Typography, Paper} from "@mui/material";
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import {theme} from "../../info/Info";
-import useWindowDimensions from "../WindowDim"
 
 function PagesBlock(props) {
-   const {encrypt, preview, name, desc/*, github*/} = props;
+   const {encrypt, preview, name, desc, width, height/*, github*/} = props;
    const [prevMode, updatePreview] = useState(true)
-   const { height, width } = useWindowDimensions();
 
    return (
 
