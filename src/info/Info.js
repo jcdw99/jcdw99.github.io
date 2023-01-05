@@ -176,7 +176,7 @@ export const info = {
                 },
                 {
                     name:"Comparison of Classifiers on a Breast Tumor Dataset",
-                    desc:"In this paper I present an analysis on the merits of two popular classification algorithms: Decision Trees, and K-Nearest Neighbors. Both algorithms are implemented in Python, instead of \"From Scratch\" as I tradiitonally do. This is to familiarize myself with SkLearn in preperation for a future analysis on Ensemble-based methods.",
+                    desc:"In this paper I present an analysis on the merits of two popular classification algorithms: Decision Trees, and K-Nearest Neighbors. Both algorithms are implemented in Python, instead my preferred \"From Scratch\" implementation. This is to familiarize myself with SkLearn in preperation for a future analysis on Ensemble-based methods.",
                     encrypt:"https://drive.google.com/file/d/1-Ua8RRDoEM2ZAGW51ShSGAqT2egKHvQk/preview",
                     preview:"https://drive.google.com/file/d/1RX5UWrUf5NiLT7Pk3u4nztk490r75fat/preview",
                     tags: ["Decision Trees", "K-Nearest Neighbors", "Breast Tumor Classification", "Bilinear Interpolation", "SIFT Matching"]

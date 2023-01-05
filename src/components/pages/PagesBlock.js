@@ -47,7 +47,7 @@ function PagesBlock(props) {
             <Grid item xs={12} s={12} md={12}><Typography style={{color:theme.textColor}} sx={{ typography: { sm: 'h5', xs: 'h6' } }}> {name} </Typography> </Grid>
          </Grid>
          <Box component={'iframe'} src={prevMode ? preview : encrypt} alt={'mockup'} className={'page'} height={{xs: '30vh', md: '50vh'}} width={{xs: '100%', md: '90%'}}/>
-         <Grid container margin={{xs:"0 0 5vh 0"}} height={{xs: 'auto', md: '25vh'}} width={{xs: '100%', md: '90%'}}>
+         <Grid container margin={{xs:"0 0 5vh 0"}} height={{xs: 'auto', md: '28vh'}} width={{xs: '100%', md: '90%'}}>
             {/* This should be the description box */}
             <Grid item xs={12}  s={12} md={12} marginTop={'1vh'}>
                  <Paper style={{backgroundColor:theme.backgroundColor, color:theme.textColor, marginTop:'1rem'}} variant='outline' elevation={10}>  

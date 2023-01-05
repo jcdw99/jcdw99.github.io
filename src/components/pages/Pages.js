@@ -78,7 +78,7 @@ export default function FullWidthTabs() {
       {info.pages.map((field, index) => (
             <TabPanel value={value} index={index} key={index}>
                 <Box>
-                  <Grid container display={'flex'} justifyContent={'center'} padding={{xs:'1.5rem', md:'4rem'}}>
+                  <Grid container display={'flex'} justifyContent={'center'} padding={{xs:'1.5rem', md:'4rem'}}> 
                   {field.work.map((page, pageDex) => (
                       
                       <Grid item xs={12} md={6} key={uuid()}>
