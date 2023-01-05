@@ -51,7 +51,7 @@ export const info = {
 
             },
             {
-                title: "Bcom Math Sci",
+                title: "BCom Math Sci",
                 file_path: bcom,
                 file_name: "JustinDewitt-Bcom"
             }
