@@ -13,7 +13,6 @@ export default function Home() {
    const { height, width } = useWindowDimensions();
    const fontsize = Math.min(height, width) > 500 ? '40px':'30px'
    return (
-      
       <Box component={'main'} display={'flex'} flexDirection={{xs: 'column', md: 'column'}} alignItems={'center'} 
            justifyContent={'center'} minHeight={'calc(100vh - 175px)'} >
          <Box className={classNames(Style.avatar, Style.shadowed)} alt={'image of developer'} style={{background: info.gradient}} component={'img'} src={info.selfPortrait} width={{xs: '35vh', md: '40vh'}}

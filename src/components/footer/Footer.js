@@ -7,7 +7,7 @@ import logo from "../../img/logo.png"
 
 const Footer = () => {
     const { height, width } = useWindowDimensions();
-    const showEmail = Math.min(height, width) > 500 
+    const showEmail = Math.min(height, width) > 500 ;
     return (
         <Grid container justify="center" spacing={2} style={{backgroundColor:'#2f2f2f'}} paddingBottom={1}>
             <Grid item  xs={showEmail ? 4 : 6}>
@@ -18,19 +18,17 @@ const Footer = () => {
                         <Typography variant="h5" fontWeight={'bold'} paddingBottom='8px' style={{ background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>
                             Qualifications
                         </Typography>
+                            
                             {   
                                 info.About.downloadLinks.map((button, idx) => {
                                     return(
-                                    <Typography variant="h6" fontWeight={'bold'} paddingTop='2px' key={idx}>
-                                        <a href={button.file_path} style={{textDecoration:'underline'}}> {button.title} </a>
-                                    </Typography>
+                                        <Typography variant="h6" fontWeight={'bold'} paddingTop='2px' key={idx}>
+                                            <a href={button.file_path} style={{textDecoration:'underline'}}> {button.title} </a>
+                                        </Typography>
                                     )
                                 }
 
                             )}
-                            
-
-               
         
                          </Box>
              
